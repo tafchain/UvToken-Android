@@ -1,0 +1,227 @@
+
+
+TODO 新增加主链需要修改的：
+TODO (1)AddCurrencyActivity;ImportWalletActivity;ImportAddCurrencyActivity;BackupPrivateKeyActivity;
+ WalletFragment(可能);ReceiveAndTransferActivity;TransferDetailActivity;TransferActivity;AddressBookActivity;NewAddressActivity;EditAddressActivity
+ 1、删掉选中aeco的钱包之后,跳重新选择钱包页面;
+ 2、首选项保存显示隐藏状态;
+ 3、语言已经切换过了之后就不再跳转;
+ 4、名字和图标区分;
+
+1、查余额加上合约地址;
+2、查eth hash时候加confirmations;
+3、接口加了精度;
+4、修改地址簿的功能,只支持ETH和BTC
+
+
+1、授权小狐狸或者其他钱包;
+2、获取所有支持的tokens;
+3、调用calldada接口,去支持transaction交易;
+4、会继续调用 protocols协议;
+5、调用Get quote接口,获取到估算收到的值、费率和矿工费等等;
+6、调用Get swap接口,进行交易;
+7、拉取小狐狸交易,支付授权;然后就可以看到交易信息了;
+
+
+1、无网络提示;
+2、交易详情复制地址;
+3、转账:矿工费过高过低提醒; TODO 存在bug
+4、转账费用超过余额时,不允许转账并且做出提醒;TODO
+5、record表里面增加备注;//TODO
+6、转账增加密码校验;//TODO
+7、转账,输入框页面被顶上去了;//TODO
+8、有正在交易的数据,不让提交//todo
+9、address 和 to_address相同;startTime小于30分钟;time为0;不让交易;否则,可以交易;
+
+1、添加TAFT币;
+2、交易记录,添加挖矿奖励数据;
+3、私钥导入bug;
+
+(1)、USDT转账:
+a、USDT失败了,BTC手续费扣款成功;此时上链了,存在BlockTime;
+b、USDT失败了,BTC手续费扣款失败;此时不存在BlockTime;
+c、USDT成功了,BTC手续费扣款成功,此时存在BlockTime;
+(2)、BTC转账:
+a、成功了,存在BlockTime;
+b、失败了,不存在BlockTime;
+
+
+1、版本升级;
+2、修改钱包名称;
+3、金额出现闪一下的bug;
+6、收款页面调整;
+9、移动Taft项目的转让功能;
+
+4、增加后台蒙层;
+5、备份弹窗;
+7、fragment切换重建bug;
+8、冷启动、热启动、温启东;
+
+
+
+
+
+1、创建钱包账户(账号地址);
+2、导入钱包账户;
+3、生成助记词;
+4、查询余额;
+5、绘制收款二维码;
+6、转账;
+7、导出privateKey,导出publicKey,导出助记词;
+创建账号（账号地址）  查询余额   绘制收款二维码  转账   导入PKStore
+
+
+
+1、创建钱包:数据库插入币种,插入钱包;//已完成
+2、导入助记词输入框,导入钱包加载动画;//已完成
+3、首页状态栏和首页数据交互;// 已完成
+
+4、我的所有功能，包括版本更新;//TODO
+5、转账业务逻辑、扫码、从相册选择功能;分享截取布局功能等;//TODO
+6、中英文语言切换;//TODO
+7、重构代码等;//TODO
+8、删除钱包接口、密码校验接口和转账接口等;http接口(汇率);//TODO
+9、助记词备份过了，还提示要备份;
+10、地址复制***问题;
+11、手机容易黑屏;
+12、转账记录;
+13、除了这些还有哪些问题?
+14、交易记录;
+15、修改密码;
+16、创建钱包多次点击的bug;
+17、导出私钥页面优化;
+
+
+
+12、钱包管理页面添加:AECO代币//已完成
+7、语言切换;//TODO
+8、防抖动;//TODO
+2、分享;//TODO 换一个弹窗
+5、交易记录;//TODO  BTC  USDT
+
+1、转账逻辑;TODO 交易记录、自定义费率
+3、相册选择收款;//已完成
+4、所有密码校验、修改密码;//TODO 已完成,需更改提示
+6、版本更新;//TODO  已完成
+9、H5对接;//已完成
+10、TAF功能;
+11、代币搜索添加;//TODO
+
+
+
+
+
+
+
+9.修改密码，输入新密码格式正确提示没有消失，密码相关的加上隐藏按钮//TODO 已完成
+10.修改密码  修改不了//TODO 已完成
+15.助记词备份，没有顺序错误提示//TODO 已完成
+16. 私钥导入，填写错误私钥，提示重复导入//TODO已完成
+17.通过私钥导入的钱包，不需要备份助记词//TODO 已完成
+18.导入钱包，助记词回车键没有检验//TODO 已完成
+
+5. btc，usdt，eth没有记录//TODO
+14. Eth刚转账完成，记录显示失败，之后才显示成功//TODO
+19. Btc账户为零，转账旷工费显示不对//TODO
+20.余额精度//TODO
+
+TODO bug:
+1、BottomNavigationView切换是否重复创建fragment
+(https://www.baidu.com/s?wd=BottomNavigationView%E5%88%87%E6%8D%A2%E6%98%AF%E5%90%A6%E9%87%8D%E5%A4%8D%E5%88%9B%E5%BB%BAfragment&rsv_spt=1&rsv_iqid=0x9734560c0004b7d6&issp=1&f=8&rsv_bp=1&rsv_idx=2&ie=utf-8&rqlang=cn&tn=baiduhome_pg&rsv_enter=0&rsv_dl=tb&oq=BottomNavigationView&rsv_t=94720eBh0USUnQKSQaJjH9lzaAYLWf9czO%2BhaIvkGgPf%2B0f5F5%2BRIC3lGS8lDaOGrt%2FH&rsv_btype=t&inputT=15032&rsv_pq=fc0dc133000168b2&rsv_sug3=91&rsv_sug1=46&rsv_sug7=100&rsv_sug2=0&rsv_sug4=16120)
+2、创建钱包眼睛小图标:显示隐藏问题;
+3、输入框弹起时候,底部导航栏也被顶上去的?
+
+
+1、创建AECO币(不能导入);
+2、H5签名;
+3、USDT查余额;
+
+
+//RSA加密 var pwdEncryptRSA = EncryptUtils.encryptRSA(
+                        pwd?.toByteArray(),
+                        base64Decode(publicKey.toByteArray())        ,
+                        1024,
+                        "RSA/None/PKCS1Padding")
+                    var base64Encode2String = EncodeUtils.base64Encode2String(pwdEncryptRSA)
+
+                    var base64Pwd = base64Decode(base64Encode2String)
+                    var pwdDecryptRSA = EncryptUtils.decryptRSA(
+                        base64Pwd,
+                        base64Decode(privateKey.toByteArray()),
+                        1024,
+                        "RSA/None/PKCS1Padding")//RSA解密
+                    var pwdByteArray = pwd?.toByteArray()
+                    var equals = Arrays.equals(pwdDecryptRSA, pwdByteArray)
+
+
+/**
+* rxjava常见操作
+**/
+ //链式调用
+    Observable.create(new ObservableOnSubscribe<Integer>() {
+        @Override
+        public void subscribe(ObservableEmitter<Integer> emitter) throws Exception {
+            Log.d(TAG, "=========================currentThread name: " + Thread.currentThread().getName());
+            emitter.onNext(1);//   发送该事件时，观察者会回调 onNext() 方法
+            emitter.onNext(2);
+            emitter.onNext(3);
+            emitter.onError(new Throwable());//发送该事件时，观察者会回调 onError() 方法，当发送该事件之后，其他事件将不会继续发送
+            emitter.onComplete();//发送该事件时，观察者会回调 onComplete() 方法，当发送该事件之后，其他事件将不会继续发送
+        }
+    }).subscribe(new Observer<Integer>() {
+        @Override
+        public void onSubscribe(Disposable d) {
+            Log.d(TAG, "======================onSubscribe");
+        }
+
+        @Override
+        public void onNext(Integer integer) {
+            Log.d(TAG, "======================onNext " + integer);
+        }
+
+        @Override
+        public void onError(Throwable e) {
+            Log.d(TAG, "======================onError");
+        }
+
+        @Override
+        public void onComplete() {
+            Log.d(TAG, "======================onComplete");
+        }
+    });
+}
+
+
+/**
+ * timer()
+ * 有什么用？
+ * 当到指定时间后就会发送一个 0L 的值给观察者。
+ */
+
+
+/**
+ * map()
+ * 有什么用？
+ * map可以将被观察者发送的数据类型转变成其他的类型
+ */
+
+  /**
+ *  flatMapOperate有什么用？
+ * 这个方法可以将事件序列中的元素进行整合加工，返回一个新的被观察者。
+ * 现在有一个需求就是要将 Person 集合中的每个元素中的 Plan 的 action 打印出来
+ */
+
+     /**
+      * concatMap()操作符:
+      * 有什么用？
+      * concatMap()和flatMap()基本上是一样的,只不过concatMap()转发出来的事件是有序的,而flatMap()是无序的.
+      */
+
+
+      /**
+      groupByOperate()
+       * 有什么用？
+       * 将发送的数据进行分组,每个分组都会返回一个被观察者
+       */
+
+

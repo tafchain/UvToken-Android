@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="WrapWrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MatchMatch">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="MatchWrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="WrapMatch">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+
+
+    <!--RadioButton样式-->
+    <style name="RB_Style">
+        <item name="background">@drawable/home_page_radiobutton_background</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:paddingTop">7dp</item>
+        <item name="android:drawablePadding">2dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+
+        <item name="android:textColor">@drawable/main_radiobutton_text_color</item>
+    </style>
+
+
+
+    <style name="customDialogBg">
+        <!--        背景颜色-->
+        <item name="md_background_color">#000000</item>
+        <!--        点击时的涟漪颜色-->
+        <item name="md_ripple_color">#000000</item>
+
+        <!--        标题字体颜色-->
+        <item name="md_color_title">#998899</item>
+        <!--        内容字体颜色-->
+        <item name="md_color_content">#873187</item>
+        <!--        按钮字体颜色-->
+        <item name="md_color_button_text">#270E27</item>
+    </style>
+
+
+</resources>

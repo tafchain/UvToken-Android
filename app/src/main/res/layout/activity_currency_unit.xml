@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/color_17"
+        tools:context=".ui.mine.ui.CurrencyUnitActivity">
+
+        <include
+            android:id="@+id/iTitle"
+            layout="@layout/common_title" />
+
+        <RelativeLayout
+            android:id="@+id/rlCNY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_20"
+            android:background="@color/white">
+
+            <!--        <item name="android:layout_height">wrap_content</item>-->
+            <!--        <item name="android:layout_width">match_parent</item>-->
+            <!--        <item name="android:textSize">@dimen/sp_14</item>-->
+            <!--        <item name="android:button">@null</item>-->
+            <!--        <item name="android:paddingLeft">@dimen/dp_20</item>-->
+            <!--        <item name="android:paddingRight">@dimen/dp_20</item>-->
+            <!--        <item name="android:paddingTop">@dimen/dp_14</item>-->
+            <!--        <item name="android:paddingBottom">@dimen/dp_14</item>-->
+            <!--        <item name="android:textColor">@drawable/rb_language_selector</item>-->
+            <TextView
+                android:id="@+id/tvCNY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="CNY"
+                android:textColor="@color/color_5"
+                android:textSize="@dimen/sp_14" />
+
+            <ImageView
+                android:id="@+id/ivCNY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:visibility="visible"
+                android:src="@mipmap/icon_gx" />
+        </RelativeLayout>
+
+        <include layout="@layout/common_line1" />
+
+        <RelativeLayout
+            android:id="@+id/rlUSD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_20"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tvUSD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="USD"
+                android:textColor="@color/color_5"
+                android:textSize="@dimen/sp_14" />
+
+            <ImageView
+                android:id="@+id/ivUSD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:visibility="invisible"
+                android:src="@mipmap/icon_gx" />
+
+        </RelativeLayout>
+        <include layout="@layout/common_line1" />
+        <RelativeLayout
+            android:id="@+id/rlEUR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_20"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tvEUR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="EUR"
+                android:textColor="@color/color_5"
+                android:textSize="@dimen/sp_14" />
+
+            <ImageView
+                android:id="@+id/ivEUR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:visibility="invisible"
+                android:src="@mipmap/icon_gx" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

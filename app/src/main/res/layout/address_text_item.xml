@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrap"
+    android:layout_marginLeft="@dimen/dp_20"
+    android:layout_marginRight="@dimen/dp_20"
+    android:layout_marginBottom="@dimen/dp_20"
+    android:background="@drawable/transfer_address_bg_shape"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_14"
+    android:shadowColor="@color/color_24"
+    android:shadowDx="2"
+    android:shadowDy="2">
+
+    <TextView
+        android:id="@+id/tvAddressName"
+        style="@style/WrapWrap"
+        android:text=""
+        android:textColor="@color/color_5"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:id="@+id/tvCurrencyAddress"
+        style="@style/WrapWrap"
+        android:layout_marginTop="@dimen/dp_4"
+        android:text=""
+        android:textColor="@color/color_9"
+        android:textSize="@dimen/sp_12" />
+
+    <TextView
+        android:id="@+id/tvAddressDes"
+        style="@style/WrapWrap"
+        android:layout_marginTop="@dimen/dp_4"
+        android:text=""
+        android:textColor="@color/color_10"
+        android:textSize="@dimen/sp_12" />
+</LinearLayout>

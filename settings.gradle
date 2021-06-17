@@ -1,0 +1,5 @@
+include ':app'
+rootProject.name = "UvToken"
+include ':lib-chain-ethereum'
+include ':lib-crypto-core'
+include ':lib-crypto-secp256k1'

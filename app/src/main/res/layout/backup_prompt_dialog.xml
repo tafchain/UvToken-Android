@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrap"
+    android:layout_gravity="center"
+    android:background="@drawable/common_prompt_dialog_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        style="@style/MatchWrap"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_4"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_20">
+
+        <ImageView
+            style="@style/WrapWrap"
+            android:layout_marginRight="@dimen/dp_20"
+            android:src="@mipmap/icon_jp_no" />
+
+        <ImageView
+            style="@style/WrapWrap"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:src="@mipmap/icon_fx_no" />
+    </LinearLayout>
+
+
+    <TextView
+        style="@style/MatchWrap"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:text="@string/prompt1" />
+
+<!--    <TextView-->
+<!--        style="@style/MatchWrap"-->
+<!--        android:layout_marginLeft="@dimen/dp_20"-->
+<!--        android:layout_marginTop="@dimen/dp_6"-->
+<!--        android:layout_marginRight="@dimen/dp_20"-->
+<!--        android:text="@string/prompt2" />-->
+
+
+    <TextView
+        android:id="@+id/tvUnderstood"
+        style="@style/MatchWrap"
+        android:layout_margin="@dimen/dp_20"
+        android:background="@drawable/common_btn_select"
+        android:gravity="center"
+        android:padding="@dimen/dp_12"
+        android:text="@string/understood"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_14" />
+
+
+</LinearLayout>

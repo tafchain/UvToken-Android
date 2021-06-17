@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrap"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp_20">
+
+    <RelativeLayout
+        android:id="@+id/rlBtc"
+        style="@style/MatchWrap"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_20"
+        android:paddingBottom="@dimen/dp_10">
+
+        <ImageView
+            android:id="@+id/ivBtc"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:src="@mipmap/icon_btc_40" />
+
+        <TextView
+            android:id="@+id/tvBtc"
+            style="@style/WrapWrap"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@+id/ivBtc"
+            android:text="BTC"
+            android:textColor="@color/color_5"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/tvIsBtcSelect"
+            style="@style/WrapWrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/is_currency_select" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlETH"
+        style="@style/MatchWrap"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_20"
+
+        android:paddingBottom="@dimen/dp_10">
+
+        <ImageView
+            android:id="@+id/ivETH"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:src="@mipmap/icon_eth" />
+
+        <TextView
+            android:id="@+id/tvETH"
+            style="@style/WrapWrap"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@+id/ivETH"
+            android:text="ETH"
+            android:textColor="@color/color_5"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/tvIsETHSelect"
+            style="@style/WrapWrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/is_currency_select" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlTRX"
+        style="@style/MatchWrap"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_20"
+        android:paddingBottom="@dimen/dp_10">
+
+        <ImageView
+            android:id="@+id/ivTRX"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:src="@mipmap/ic_trx" />
+
+        <TextView
+            android:id="@+id/tvTRX"
+            style="@style/WrapWrap"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@+id/ivTRX"
+            android:text="TRX"
+
+            android:textColor="@color/color_5"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/tvIsTRXSelect"
+            style="@style/WrapWrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/is_currency_select" />
+    </RelativeLayout>
+</LinearLayout>

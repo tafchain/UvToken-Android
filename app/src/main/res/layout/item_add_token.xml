@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rlAECO"
+        style="@style/MatchWrap"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_20">
+
+        <ImageView
+            android:id="@+id/iv_token"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:src="@mipmap/arther_icon" />
+
+
+        <TextView
+            android:id="@+id/tv_token_name"
+            style="@style/WrapWrap"
+            android:layout_marginLeft="@dimen/dp_6"
+            android:layout_toRightOf="@+id/iv_token"
+            android:text="AECO"
+            android:textColor="@color/color_5"
+            android:textSize="@dimen/sp_16" />
+
+
+        <TextView
+            android:id="@+id/tv_token_des_name"
+            style="@style/WrapWrap"
+            android:layout_below="@+id/tv_token_name"
+            android:layout_marginLeft="@dimen/dp_6"
+            android:layout_toRightOf="@+id/iv_token"
+            android:text="Arthur-ex"
+            android:textColor="@color/color_9"
+            android:textSize="@dimen/sp_12" />
+
+
+        <ImageView
+            android:id="@+id/iv_check"
+            android:layout_height="20dp"
+            android:layout_width="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:src="@mipmap/icon_gx" />
+    </RelativeLayout>
+
+</LinearLayout>

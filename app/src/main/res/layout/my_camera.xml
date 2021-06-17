@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchMatch">
+
+<!--    <SurfaceView-->
+<!--        android:id="@+id/preview_view"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        />-->
+
+<!--    <com.uuzuche.lib_zxing.view.ViewfinderView-->
+<!--        android:id="@+id/viewfinder_view"-->
+<!--        app:inner_corner_length="@dimen/dp_30"-->
+<!--        app:inner_corner_width="@dimen/dp_2"-->
+<!--        app:inner_margintop="@dimen/dp_186"-->
+<!--        app:inner_scan_iscircle="true"-->
+<!--        app:inner_height="240dp"-->
+<!--        app:inner_width="240dp"-->
+<!--        app:inner_scan_speed="10"-->
+<!--        app:inner_corner_color="@color/color_7"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--       />-->
+
+<!--&lt;!&ndash;    app:inner_scan_bitmap="@drawable/scan_image"&ndash;&gt;-->
+<!--&lt;!&ndash;    app:inner_corner_color="@color/scan_corner_color"&ndash;&gt;-->
+<!--&lt;!&ndash;    <declare-styleable name="innerrect">&ndash;&gt;-->
+<!--&lt;!&ndash;        <attr name="inner_width" format="dimension"/>&lt;!&ndash; 控制扫描框的宽度 &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        <attr name="inner_height" format="dimension"/>&lt;!&ndash; 控制扫描框的高度 &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        <attr name="inner_margintop" format="dimension" />&lt;!&ndash; 控制扫描框距离顶部的距离 &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        <attr name="inner_corner_color" format="color" />&lt;!&ndash; 控制扫描框四角的颜色 &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        <attr name="inner_corner_length" format="dimension" />&lt;!&ndash; 控制扫描框四角的长度 &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        <attr name="inner_corner_width" format="dimension" />&lt;!&ndash; 控制扫描框四角的宽度 &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        <attr name="inner_scan_bitmap" format="reference" />&lt;!&ndash; 控制扫描图 &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        <attr name="inner_scan_speed" format="integer" />&lt;!&ndash; 控制扫描速度 &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        <attr name="inner_scan_iscircle" format="boolean" />&lt;!&ndash; 控制小圆点是否展示 &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;    </declare-styleable>&ndash;&gt;-->
+</FrameLayout>

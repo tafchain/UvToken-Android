@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tvShuffleMnemonic"
+   android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_40"
+    android:layout_marginTop="@dimen/dp_10"
+    android:layout_marginRight="@dimen/dp_10"
+    android:background="@drawable/shuffle_mnemonic_bg_select"
+    android:gravity="center"
+    android:text="abc"
+    android:textColor="@color/mnemonic_color_select"
+    android:textSize="@dimen/sp_14" />
+
+

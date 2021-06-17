@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        style="@style/MatchMatch"
+        android:orientation="vertical"
+        tools:context=".ui.transaction.ui.TransactionFragment">
+        <include
+            android:id="@+id/iTitle"
+            layout="@layout/common_title" />
+
+        <include
+            layout="@layout/common_pb"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.github.lzyzsd.jsbridge.BridgeWebView
+                android:id="@+id/wvTransaction"
+                style="@style/MatchMatch" />
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/layout_transaction_tip"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/ic_transaction_bg"/>
+
+
+
+                </RelativeLayout>
+
+
+            </androidx.core.widget.NestedScrollView>
+
+
+            <ImageView
+                android:id="@+id/iv_transaction_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="47dp"
+                android:visibility="gone"
+                android:background="@mipmap/ic_transaction_btn"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

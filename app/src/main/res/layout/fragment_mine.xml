@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        style="@style/MatchMatch"
+        android:background="@color/color_17"
+        android:orientation="vertical"
+        tools:context=".ui.mine.ui.MineFragment">
+
+
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:id="@+id/topView"/>-->
+
+        <include
+            android:id="@+id/iTitle"
+            layout="@layout/common_title" />
+
+        <TextView
+            android:id="@+id/tvAddressBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/white"
+            android:drawableLeft="@mipmap/icon_my_dzb"
+            android:drawableRight="@mipmap/icon_ckgd"
+            android:drawablePadding="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dp_20"
+            android:text="@string/address_book"
+            android:textColor="@color/color_5"
+            android:textSize="@dimen/sp_14" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_marginLeft="@dimen/dp_50"
+            android:background="@color/color_21" />
+
+        <RelativeLayout
+            android:id="@+id/rlLanguageSwitch"
+            style="@style/MatchWrap"
+            android:background="@color/white"
+            android:padding="@dimen/dp_20">
+
+            <TextView
+                style="@style/WrapWrap"
+                android:background="@color/white"
+                android:drawableLeft="@mipmap/icon_my_qhyy"
+                android:drawablePadding="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:text="@string/language_switch"
+                android:textColor="@color/color_5"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tvLanguage"
+                style="@style/WrapWrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@color/white"
+                android:drawableRight="@mipmap/icon_ckgd"
+                android:drawablePadding="@dimen/dp_6"
+                android:text=""
+                android:textColor="@color/color_10"
+                android:textSize="@dimen/sp_14" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_marginLeft="@dimen/dp_50"
+            android:background="@color/color_21" />
+
+        <RelativeLayout
+            android:id="@+id/rlCurrencyUnit"
+            style="@style/MatchWrap"
+            android:background="@color/white"
+            android:padding="@dimen/dp_20">
+
+            <TextView
+                style="@style/WrapWrap"
+                android:background="@color/white"
+                android:drawableLeft="@mipmap/icon_my_hbdw"
+                android:drawablePadding="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:text="@string/currency_unit"
+                android:textColor="@color/color_5"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tvCurrencyUnit"
+                style="@style/WrapWrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@color/white"
+                android:drawableRight="@mipmap/icon_ckgd"
+                android:drawablePadding="@dimen/dp_6"
+                android:text="CNY"
+                android:textColor="@color/color_10"
+                android:textSize="@dimen/sp_16" />
+        </RelativeLayout>
+
+
+
+
+        <!--    <TextView-->
+        <!--        android:id="@+id/tvTransferPwd"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_marginTop="@dimen/dp_2"-->
+        <!--        android:background="@color/white"-->
+        <!--        android:drawableLeft="@mipmap/icon_btc_30"-->
+        <!--        android:drawableRight="@mipmap/icon_ckgd"-->
+        <!--        android:drawablePadding="@dimen/dp_10"-->
+        <!--        android:gravity="center_vertical"-->
+        <!--        android:padding="@dimen/dp_10"-->
+        <!--        android:text="@string/transfer_pwd"-->
+        <!--        android:textColor="@color/color_5"-->
+        <!--        android:textSize="@dimen/sp_16" />-->
+
+        <TextView
+            android:id="@+id/tvAboutUs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/white"
+            android:drawableLeft="@mipmap/icon_my_gywm"
+            android:drawableRight="@mipmap/icon_ckgd"
+            android:drawablePadding="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dp_20"
+            android:text="@string/about_us"
+            android:textColor="@color/color_5"
+            android:textSize="@dimen/sp_14" />
+
+
+
+
+        <TextView
+            android:id="@+id/isTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="测试版"
+            android:textSize="@dimen/sp_16"
+            android:layout_margin="@dimen/dp_20"
+            android:visibility="gone"
+            android:gravity="center_horizontal"
+            android:textColor="@color/color_14"/>
+    </LinearLayout>
+</layout>

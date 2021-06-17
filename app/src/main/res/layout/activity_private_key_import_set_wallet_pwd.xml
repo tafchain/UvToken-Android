@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        style="@style/MatchMatch"
+        android:orientation="vertical"
+        tools:context=".ui.importWallet.ui.PrivateKeyImportSetWalletPwdActivity">
+
+        <include
+            android:id="@+id/iTitle"
+            layout="@layout/common_title" />
+
+
+        <TextView
+            android:id="@+id/tvWalletName"
+            style="@style/WrapWrap"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_30"
+            android:text="@string/wallet_name"
+            android:textColor="@color/color_8"
+            android:textSize="@dimen/sp_18" />
+
+        <RelativeLayout
+            android:id="@+id/rlWalletName"
+            style="@style/MatchWrap"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_20">
+
+            <EditText
+                android:id="@+id/etWalletName"
+                style="@style/MatchWrap"
+                android:hint="@string/please_enter_a_name"
+                android:inputType="text"
+                android:maxLength="20"
+                android:textColor="@color/black"
+                android:textColorHint="@color/color_10"
+                android:textSize="@dimen/sp_14"
+                android:theme="@style/EditTextLineColor" />
+
+            <ImageView
+                android:id="@+id/ivClear"
+                style="@style/WrapWrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dp_6"
+                android:visibility="gone"
+                android:src="@mipmap/icon_clean" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvWalletNamePrompt"
+            style="@style/WrapWrap"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_6"
+            android:text="@string/char1_20"
+            android:textColor="@color/color_9"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/tvPwd"
+            style="@style/WrapWrap"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="@string/pwd"
+            android:textColor="@color/color_5"
+            android:textSize="@dimen/sp_18" />
+
+
+        <RelativeLayout
+            android:id="@+id/rlPwd"
+            style="@style/MatchWrap"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_20">
+
+            <EditText
+                android:id="@+id/etPwd"
+                style="@style/MatchWrap"
+                android:hint="@string/please_enter_pwd"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:textColorHint="@color/color_10"
+                android:textSize="@dimen/sp_14"
+                android:theme="@style/EditTextLineColor" />
+
+
+            <CheckBox
+                android:id="@+id/cbEye1"
+                style="@style/WrapWrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:button="@drawable/check_user_password_selector"
+                android:padding="@dimen/dp_6" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvPwdPrompt"
+            style="@style/WrapWrap"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_6"
+            android:text="@string/pwd_prompt"
+            android:textColor="@color/color_9"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/tvRepeatPwd"
+            style="@style/WrapWrap"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="@string/repeat_pwd"
+            android:textColor="@color/color_5"
+            android:textSize="@dimen/sp_18" />
+
+
+        <RelativeLayout
+            android:id="@+id/rlRepeatPwd"
+            style="@style/MatchWrap"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_20">
+
+            <EditText
+                android:id="@+id/etRepeatPwd"
+                style="@style/MatchWrap"
+                android:hint="@string/please_enter_pwd_again"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:textColorHint="@color/color_10"
+                android:textSize="@dimen/sp_14"
+                android:theme="@style/EditTextLineColor" />
+
+            <CheckBox
+                android:id="@+id/cbEye2"
+                style="@style/WrapWrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:button="@drawable/check_user_password_selector"
+                android:padding="@dimen/dp_6" />
+
+        </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+        <RelativeLayout
+            android:id="@+id/rlTermsOfUse"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_horizontal">
+
+            <CheckBox
+                android:layout_alignParentBottom="true"
+                android:id="@+id/cbAgreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:button="@null"
+                android:drawableLeft="@drawable/terms_of_use_cb_selector"
+                android:drawablePadding="@dimen/dp_4"
+                android:checked="false"
+                android:background="@null"
+                android:text="@string/already_read"
+                android:textColor="@color/color_11"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:id="@+id/tvAgreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/cbAgreement"
+                android:text="@string/user_agreement"
+                android:textColor="@color/color_7"
+                android:textSize="@dimen/sp_12" />
+
+        </RelativeLayout>
+
+
+
+        <Button
+            android:id="@+id/btnImport"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_30"
+            android:background="@drawable/common_btn_select"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="@string/import_confirm"
+            android:textAllCaps="false"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+</layout>

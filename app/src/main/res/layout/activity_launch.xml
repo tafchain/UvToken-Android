@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        style="@style/MatchMatch"
+        android:background="@drawable/launch_bg"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        tools:context=".ui.launch.ui.LaunchActivity">
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            style="@style/WrapWrap"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/pic_qid_logo" />
+
+        <ImageView
+            android:id="@+id/ivBgPic"
+            style="@style/WrapWrap"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_40"
+            android:src="@mipmap/pic_qid_bg" />
+
+    </LinearLayout>
+</layout>

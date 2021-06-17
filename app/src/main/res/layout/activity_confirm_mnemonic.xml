@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        style="@style/MatchMatch"
+        android:scrollbars="none"
+        tools:context=".ui.createWallet.ui.ConfirmMnemonicActivity">
+
+
+        <LinearLayout
+            style="@style/MatchMatch"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/v"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+
+            <RelativeLayout
+                android:id="@+id/rl"
+                style="@style/MatchWrap"
+                android:animateLayoutChanges="true">
+
+                <include
+                    android:id="@+id/iTitle"
+                    layout="@layout/common_title" />
+                <TextView
+                    android:id="@+id/tvMnemonicSequenceIsWrong"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_80"
+                    android:background="@color/color_14"
+                    android:gravity="center"
+                    android:text="@string/the_mnemonic_sequence_is_wrong"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_14"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <TextView
+                style="@style/MatchWrap"
+                android:layout_margin="@dimen/dp_20"
+                android:text="@string/confirm_mnemonic"
+                android:textColor="@color/color_9"
+                android:textSize="@dimen/sp_14" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvSelectMnemonic"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_220"
+                android:layout_margin="@dimen/dp_20"
+                android:background="@drawable/confirm_mnemonic_bg_shape"
+                android:paddingLeft="@dimen/dp_14"
+                android:paddingTop="@dimen/dp_4"
+                android:paddingRight="@dimen/dp_4" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvShuffleMnemonic"
+                style="@style/MatchWrap"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:paddingLeft="@dimen/dp_14"
+                android:paddingTop="@dimen/dp_4"
+                android:paddingRight="@dimen/dp_4" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btnBackupCompleted"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_44"
+                android:layout_margin="@dimen/dp_38"
+                android:background="@drawable/common_btn_select"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="@string/sure"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </ScrollView>
+</layout>

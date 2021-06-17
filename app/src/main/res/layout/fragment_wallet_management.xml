@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        style="@style/MatchMatch"
+        android:background="@color/color_17"
+        android:orientation="vertical"
+        tools:context=".ui.main.ui.WalletManagementFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/white"/>
+
+            <LinearLayout
+                android:id="@+id/llHead"
+                style="@style/MatchWrap"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/dp_6"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:paddingLeft="@dimen/dp_20"
+                    android:paddingTop="@dimen/dp_20"
+                    android:text="@string/wallet_manage"
+                    android:textColor="@color/color_5"
+                    android:textSize="@dimen/sp_16" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_2"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/tvClose"
+                    style="@style/WrapWrap"
+                    android:paddingLeft="@dimen/dp_20"
+                    android:paddingTop="@dimen/dp_20"
+                    android:paddingRight="@dimen/dp_20"
+                    android:text="@string/cancel_0"
+                    android:textColor="@color/color_5"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvWallet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                       android:nestedScrollingEnabled="false"
+                        android:background="@color/white" />
+
+                    <LinearLayout
+                       android:visibility="gone"
+                        android:id="@+id/llManageAccount"
+                        style="@style/MatchWrap"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/WrapWrap"
+                            android:paddingLeft="@dimen/dp_20"
+                            android:paddingTop="@dimen/dp_20"
+                            android:text="@string/account_management"
+                            android:textColor="@color/color_5"
+                            android:textSize="@dimen/sp_16" />
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:visibility="gone"
+                        android:id="@+id/rvAECO"
+                        android:layout_width="match_parent"
+                        android:nestedScrollingEnabled="false"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white" />
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_30"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvCreateWallet"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_44"
+                android:layout_marginRight="@dimen/dp_6"
+                android:layout_weight="1"
+                android:background="@drawable/rv_create_wallet_footer_shape"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:text="@string/create_wallet"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tvImportWallet"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_44"
+                android:layout_marginLeft="@dimen/dp_6"
+                android:layout_weight="1"
+                android:background="@drawable/rv_import_wallet_footer_shape"
+                android:textColor="@color/color_12"
+                android:gravity="center"
+                android:text="@string/import_wallet"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+    </LinearLayout>
+
+</layout>

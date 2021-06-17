@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrap"
+    android:layout_gravity="center"
+    android:background="@drawable/common_prompt_dialog_bg"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ivClose"
+        style="@style/WrapWrap"
+        android:layout_gravity="right"
+        android:padding="@dimen/dp_14"
+        android:src="@mipmap/icon_tc_close" />
+
+    <TextView
+        style="@style/WrapWrap"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/input_pwd_dialog_title"
+        android:textColor="@color/color_5"
+        android:textSize="@dimen/sp_16"
+        android:textStyle="bold" />
+
+
+    <RelativeLayout
+        android:id="@+id/rlPwd"
+        style="@style/MatchWrap"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_20">
+
+        <EditText
+            android:id="@+id/etPwd"
+            style="@style/MatchWrap"
+            android:hint="@string/please_enter_pwd"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textColorHint="@color/color_10"
+            android:textSize="@dimen/sp_14"
+            android:theme="@style/EditTextLineColor" />
+
+        <CheckBox
+            android:id="@+id/cbEye"
+            style="@style/WrapWrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@drawable/check_user_password_selector"
+            android:padding="@dimen/dp_6" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tvOk"
+        style="@style/MatchWrap"
+        android:layout_margin="@dimen/dp_20"
+        android:background="@drawable/common_btn_select"
+        android:enabled="false"
+        android:gravity="center"
+        android:padding="@dimen/dp_12"
+        android:text="@string/ok_0"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_14" />
+
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.manageWallet.ui.BackupPrivateKeyActivity">
+
+        <include
+            android:id="@+id/iTitle"
+            layout="@layout/common_title" />
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCoinType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <!--    TODO 考虑做成RecyclerView-->
+        <!--        <include layout="@layout/common_select_coin_type" />-->
+    </LinearLayout>
+</layout>

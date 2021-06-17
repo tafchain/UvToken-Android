@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrap"
+    android:background="@color/white">
+
+    <TextView
+        style="@style/WrapWrap"
+
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingTop="@dimen/dp_20"
+        android:text="@string/wallet_manage"
+        android:textColor="@color/color_5"
+        android:textSize="@dimen/sp_16" />
+
+    <TextView
+        android:id="@+id/tvClose"
+        style="@style/WrapWrap"
+        android:layout_alignParentRight="true"
+
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingTop="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_20"
+        android:text="@string/cancel_0"
+        android:textColor="@color/color_5"
+        android:textSize="@dimen/sp_14" />
+</RelativeLayout>

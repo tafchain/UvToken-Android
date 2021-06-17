@@ -1,0 +1,681 @@
+<resources>
+    //tabbar
+    <string name="title_wallet">钱包</string>
+    <string name="title_quotes">行情</string>
+    <string name="transaction">交易</string>
+    <string name="swap">交易</string>
+    <string name="financial_management">DApp</string>
+    <string name="title_mine">我的</string>
+
+    //创建钱包
+    <string name="app_name">UvToken</string>
+    <string name="app_name_debug">UvToken-Debug</string>
+    <string name="multi_chain_wallet">多链钱包</string>
+    <string name="support_public_chains">支持BTC、ETH、TRX 等主流公链</string>
+    <string name="create_wallet">创建钱包</string>
+    <string name="not_have_wallet">没有钱包,首次使用</string>
+    <string name="import_wallet">导入钱包</string>
+    <string name="have_wallet">已有钱包，支持助记词、私钥等方式导入</string>
+    <string name="wallet_name">钱包名称</string>
+    <string name="please_enter_a_name">请输入名称</string>
+    <string name="pwd">密码</string>
+    <string name="please_enter_pwd">请输入密码</string>
+    <string name="char1_20">1-20位字符</string>
+    <string name="pwd_prompt">至少8位字符,包含大小写字母和数字</string>
+    <string name="repeat_pwd">重复密码</string>
+    <string name="please_enter_pwd_again">请再次输入密码</string>
+    <string name="already_read">我已阅读并同意</string>
+    <string name="user_agreement">《使用条款》</string>
+    <string name="terms_of_use">使用条款</string>
+    <string name="create">创建</string>
+    <string name="add_currency">添加币种</string>
+    <string name="will_support_more_main_chain_currencies">即将支持更多主链币种</string>
+    <string name="creating_a_wallet_for_you">正在为您创建钱包中...</string>
+    <string name="password_input_is_inconsistent">两次密码输入不一致</string>
+    <string name="create_failed">创建失败，请重试</string>
+    <string name="press_again_to_exit">再按一次退出</string>
+
+    //交易
+    <string name="sale">卖出</string>
+    <string name="swap_receive">收到</string>
+    <string name="inch_swap">兑换</string>
+
+    //榜单
+    <string name="market_value">市值榜</string>
+    <string name="watch_list">自选</string>
+    <string name="change">涨跌榜</string>
+    <string name="has_no_create_eth">请选择ETH钱包后重试</string>
+    <string name="disconnect_dapp">您已断开Dapp连接</string>
+    <string name="cancel_select">取消自选</string>
+    <string name="has_cancel">已取消</string>
+    <string name="has_add">已成功添加</string>
+
+
+    //导入钱包
+    <string name="import_wallet_prompt">钱包服务器不保存您的助记词等信息</string>
+    <string name="mnemonic_import">助记词导入</string>
+    <string name="private_key_import">私钥导入</string>
+    <string name="input_prompt">请填写您的助记词，用空格分开</string>
+    <string name="import_confirm">导入</string>
+    <string name="select_chain">请选择导入的主链钱包</string>
+    <string name="please_input_12_mnemonic">请输入12个助记词！</string>
+    <string name="mnemonic_spell">当前助记词拼写错误，请检查</string>
+    <string name="please_input_private_key_address">请填写私钥地址!</string>
+    //"重复导入" = "Repeat import";
+    <string name="repeat_import_prompt">已导入该钱包，无法重复导入</string>
+    <string name="re_import">重新导入</string>
+    <string name="complete">完成</string>
+
+    //导入指定种类钱包私钥地址
+    <string name="import_btc_title">导入BTC钱包</string>
+    <string name="import_eth_title">导入ETH钱包</string>
+    <string name="import_aeco_title">导入AECO钱包</string>
+    <string name="import_trx_title">导入TRX钱包</string>
+    <string name="import_taft_title">导入TAFT钱包</string>
+    <string name="input_btc_private_key_address">请填写您的BTC主链钱包私钥地址</string>
+    <string name="input_eth_private_key_address">请填写您的ETH主链钱包私钥地址</string>
+    <string name="input_trx_private_key_address">请填写您的TRX主链钱包私钥地址</string>
+    <string name="input_taft_private_key_address">请填写您的TAFT主链钱包私钥地址</string>
+    <string name="input_aeco_private_key_address">请填写您的AECO主链钱包私钥地址</string>
+
+    <string name="private_key_wrong">请输入正确的私钥地址</string>
+    <string name="import_success">导入成功</string>
+    <string name="is_importing">正在导入...</string>
+    <string name="had_import">已存在，请勿重复导入</string>
+
+    //创建钱包提醒
+    <string name="already_create_wallet">已为您创建去中心化的钱包</string>
+    <string name="prompt">提示</string>
+    <string name="prompt_content">助记词等于整个钱包的所有控制权，请妥善保管
+        助记词丢失将无法找回，请务必备份</string>
+    <string name="backup_immediately">立即备份</string>
+    <string name="backup_later">稍后备份</string>
+    <string name="transaction_detail">转账详情</string>
+    <string name="receiving_address">转账地址</string>
+    <string name="miner_fee">矿工费</string>
+    <string name="Memo">备注</string>
+
+
+    //备份助记词
+    <string name="mnemonic_backup_title">备份助记词</string>
+    <string name="the_mnemonic_sequence_is_wrong">助记词顺序错误，请仔细检查</string>
+    <string name="prompt1">1、请勿在联网情况下截屏、分享等操作，以防被第三方恶意软件收集造成财产损失\n
+    2、钱包服务器不保存您的助记词等信息，请务必完整备份</string>
+    <!--    <string name="prompt2">2、钱包服务器不保存您的助记词等信息，请务必完整备份</string>-->
+    <string name="understood">知道了</string>
+    <string name="backup_prompt3">请在安全的环境下按顺序抄写一下助记词，并妥善保存</string>
+    <string name="backup_completed">已完成备份</string>
+    <string name="prompt0">请勿在联网情况下截屏、分享等操作，以防被第三方恶意软件收集造成财产损失</string>
+
+    //确认助记词
+    <string name="confirm_mnemonic_title">确认助记词</string>
+    <string name="confirm_mnemonic">请按顺序点击助记词，已确认您的备份正确性</string>
+    //"助记词顺序错误，请仔细检查" = "The order of mnemonics is wrong. Please check it carefully";
+
+    //切换语言
+    <string name="language_switch">语言切换</string>
+    <string name="language_switch_success">语言切换成功!</string>
+
+    //我的
+    <string name="address_book">地址簿</string>
+    <string name="language_switch1">语言切换</string>
+    <string name="currency_unit">货币单位</string>
+    <string name="transfer_pwd">交易密码</string>
+    <string name="about_us">关于我们</string>
+    <string name="no_data">暂无数据</string>
+    <string name="new_address">新建地址</string>
+    <string name="save">保存</string>
+    <string name="type">类型</string>
+    <string name="name">名称</string>
+    <string name="address">地址</string>
+    <string name="description">描述</string>
+    <string name="not_required">非必填</string>
+    <string name="delete">删除</string>
+    <string name="success_delete">成功删除</string>
+    <string name="save_success">保存成功</string>
+    <string name="modified_success">修改成功</string>
+
+    <string name="input_pwd_dialog_title">输入密码</string>
+    <string name="currency_unit_switch_successfully">货币单位切换成功!</string>
+    <string name="new_version_update">版本更新</string>
+    <string name="current_version">当前版本</string>
+    <string name="already_the_latest_version">已经是最新版本了</string>
+    <string name="edit_address">编辑地址</string>
+    <string name="modified_failed">修改出错</string>
+
+    //全局
+    <string name="please_check_the_network">请检查网络</string>
+    <string name="loading_failed">加载失败</string>
+    <string name="try_again">是否重试?</string>
+    <string name="try_a">重试</string>
+    <string name="please_try_again">请重试</string>
+    <string name="ok_0">确定</string>
+    <string name="cancel_0">取消</string>
+    <string name="update">立即更新</string>
+
+    //首页钱包
+    <string name="total_assets">资产总值</string>
+    <string name="safety_warning">安全提醒</string>
+    <string name="backup_safe_reminder1">您的钱包尚未备份，如果出现忘记密码、删除应用或手机丢失等情况将会导致您的资产出现损失，请立即备份钱包！</string>
+    <string name="backup_now">立即备份</string>
+    <string name="assets">资产</string>
+    <string name="record">记录</string>
+    <string name="switch_wallet">切换钱包</string>
+
+    //搜索币种
+    <string name="please_enter_coin_name">请输入要添加的币种名称</string>
+    <!--    <string name="ERC20_coin">当前仅支持添加<font color='#fff0ba62'> ERC20 </font>代币</string>-->
+    <string name="ERC20_coin">当前仅支持添加 ERC20 代币</string>
+    <string name="popular_coins">热门币种</string>
+    <string name="add_coin">添加主链</string>
+    <string name="adding">正在添加...</string>
+    <string name="added_successfully">添加成功</string>
+    <string name="add_failed">添加失败</string>
+    <string name="deleting">正在删除...</string>
+    <string name="successfully_deleted">删除成功</string>
+
+
+    //钱包管理
+    <string name="wallet_manage">钱包管理</string>
+    <string name="modify_wallet_pwd">修改密码</string>
+    <string name="backup_private_key">备份私钥</string>
+    <string name="delete_wallet">删除钱包</string>
+    <string name="Tips">温馨提示</string>
+    <string name="can_not_delete">你正在使用当前钱包，切换后再删除吧</string>
+    <string name="enter_wallet_password">输入钱包密码</string>
+    <string name="wrong_password">密码错误</string>
+    <string name="private_key">私钥</string>
+    <string name="manager">管理</string>
+    <string name="confirm_the_changes">确认修改</string>
+    <string name="original_password">原密码</string>
+    <string name="please_enter_original_password">请输入原密码</string>
+    <string name="changing">修改中</string>
+    <string name="account_management">账户管理</string>
+    <string name="wallet_address">钱包地址</string>
+
+    //扫描
+    <string name="copy_success">复制成功</string>
+    <string name="scan_result">扫描结果</string>
+    <string name="scan">扫一扫</string>
+    <string name="photo_album">相册</string>
+    <string name="processing">正在处理...</string>
+    <string name="no_qr">未发现二维码/条形码</string>
+    <string name="scan_prompt">将二维码放入框内，即可自动扫描</string>
+    <string name="copy">复制</string>
+
+    //收款、转账
+    <string name="share_it">分享</string>
+    <string name="address_qr_code">地址二维码</string>
+    <string name="receive_address">收款地址</string>
+    <string name="receive_address1">收款地址</string>
+    <string name="backup_safe_reminder">您的钱包尚未备份，如果出现忘记密码、删除应用或手机丢失等情况将会导致您的资产出现损失，请立即备份钱包！</string>
+    <string name="transfer_address">转账地址</string>
+    <string name="all">全部</string>
+    <string name="memo">备注（Memo）</string>
+    <string name="absenteeism">矿工费</string>
+    <string name="slower">较慢</string>
+    <string name="recommend">推荐</string>
+    <string name="fast">快速</string>
+    <string name="forecast">预计</string>
+    <string name="minutes">分钟</string>
+    <string name="customize">自定义</string>
+    <string name="commit">提交</string>
+    <string name="transfer_amount">转账金额</string>
+    <string name="receive">收款</string>F
+    <string name="transfer">转账</string>
+
+    <string name="rate">费率</string>
+    <string name="waiting_for_confirmation">等待确认</string>
+    <string name="submitted_seccessfully">提交成功</string>
+    <string name="failed_ti_submit">提交失败</string>
+    <string name="submitting">提交中...</string>
+    <string name="receive_qr">收款二维码</string>
+
+    <string name="mining_rewards">挖矿奖励</string>
+    <!--    <string name="no_details_and_copy_hash">暂无详情，已复制交易hash</string>-->
+
+    "费率" = "Gas Price";
+    //"提交中..." = "Submitting...";
+    //"提交成功" = "Submitted successfully";
+    //"提交失败" = "Failed to submit"
+
+    //交易
+    <string name="no_net">加载失败，请重试(网络权限：请在系统“设置”中，为“TAF Wallet”打开网络权限)</string>
+    <string name="recent_transactions">最近交易</string>
+    <string name="statement">声明</string>
+    <string name="statement_content">您访问的页面将跳转至第三方DApp,您在第三方DApp使用行为将适用第三方用户协议与隐私协议，由其直接并单独向您承担责任。</string>
+    <string name="title_permission">申请权限</string>
+    <string name="permission_rationale_camera_message">您已拒绝相机权限,需要开启相机权限才能识别二维码</string>
+    <string name="permission_rationale_storage_message">您已拒绝读写相册权限,需要读写相册权限来识别二维码</string>
+    <string name="got_it">我知道了</string>
+    <string name="only_support_arthur">当前DApp只支持亚瑟主链</string>
+    <string name="select_wallet">选择钱包</string>
+    <string name="next">下一步</string>
+    <string name="please_input">地址信息未填写完整</string>
+    <string name="arther_main_chain">亚瑟主链</string>
+    <string name="wallet_list">钱包列表</string>
+    <string name="exchange_detail">兑换详情</string>
+    <string name="hour_fee">
+预计60分钟</string>
+    <string name="half_hour_fee">
+预计30分钟</string>
+    <string name="fastest_fee">
+预计10分钟</string>
+    <string name="server_error102604">转账金额小于等于0</string>
+    <string name="trx_amount_tip">金额不能为0</string>
+    <string name="server_error102606">转账用户不能为自己</string>
+
+    <string name="new_name">新名称</string>
+    <string name="please_enter_a_new_name">请输入新名称</string>
+    <string name="modify_wallet_name">修改钱包名称</string>
+    <string name="please_log_in_first">请先登录</string>
+    <string name="successful">成功</string>
+    <string name="failed">失败</string>
+    <string name="amount">金额</string>
+    <string name="payment_address">付款地址</string>
+    <string name="transaction_hash">交易哈希值</string>
+    <string name="query_details">查询详情</string>
+    <string name="details">详情</string>
+    <string name="this_transaction_hash_has_been_copied">已复制此交易哈希</string>
+    <string name="sign_out">退出登录</string>
+    <string name="no_details">暂无详情</string>
+    <string name="receiving_address_same_as_transfer_address">收款地址与转账地址相同时，UvToken不允许转账交易</string>
+    <string name="device_is_offling">设备已离线</string>
+    <string name="please_check_network">网络已断开，请检查网络链接。</string>
+    <string name="off_line">离线中</string>
+    <string name="miner_fee_rate_is_too_low">矿工费率过低,将会影响交易确认时间</string>
+    <string name="miner_fee_rate_is_too_high">矿工费率过高,将会造成矿工费浪费</string>
+    <string name="insufficient_current_balance">当前余额不足</string>
+    <string name="balance_is_not_enough">主币余额不足以支付矿工费</string>
+    <string name="fee_rate_cannot_be_lower_than_1">矿工费不能低于0.00000266BTC</string>
+    <string name="you_hava_an_unconfirmed_transaction">您有一笔未确认的交易</string>
+    <string name="address_illegal">您输入的地址不合法</string>
+    <string name="invalid_address">地址不合法</string>
+    <string name="decentralized_financial_management">去中心化理财</string>
+    <string name="prompt_content2">您所访问的页面将跳转至第三方平台，您在第三方平台上的使用行为必须同意第三方平台的《用户协议》及其他隐私政策等规则，并由第三方平台单独向您承担责任</string>
+    <string name="agree2">同意</string>
+    <string name="dappAlertContent">您在第三方DApp上的使用行为将适用该第三方DApp的《用户协议》和《隐私政策》，由三方DApp直接并单独向你承担责任。</string>
+    <string name="loan_and_financial_management">借贷理财，支持17币种</string>
+    <string name="deposit_coins_to_earn_interest">存币生息，支持USDT/USDC/DAI</string>
+    <string name="crv_mining_claim_vote">CRV挖矿、认领、投票</string>
+    <string name="stable_currency_generates_interest">稳定币生息，稳定币余额宝</string>
+    <string name="one_inch_des">去中心化聚合交易平台</string>
+    <string name="uniswap_des">去中心化交易所</string>
+    <string name="dydx_des">全球领先的去中心化合约交易所</string>
+    <string name="signature">签名</string>
+    <string name="news_info">消息</string>
+    <string name="financing">理财</string>
+    <string name="add_optional">添加自选</string>
+    <string name="currency_market_value">币种/市值（￥）</string>
+    <string name="latest_price">最新价（￥）</string>
+    <string name="ups_and_downs_24H">24H涨跌</string>
+    <string name="billion">亿</string>
+    <string name="enter_token_name">请输入Token名称</string>
+    <string name="trx_tip">矿工费说明\n当用户发起一笔转账交易时，矿工费计算方法如下：\n
+-优先尝试消耗交易发起者的剩余带宽(Bandwidth Points)\n
+-如果账户中带宽不足，则消耗交易发起者余额中的TRX，交易的字节数*10sun （1TRX=1000000sun）此处矿工费根据一般交易预估得出，最终实际消耗矿工费由波场网络决定，请知悉。</string>
+
+    <string name="inch_rate">预估费率</string>
+    <string name="inch_fee">预估矿工费</string>
+    <string name="inch_pay_amount">卖出的数量</string>
+    <string name="inch_receive_amount">收到的数量</string>
+    <string name="inch_estimate">预估</string>
+    <string name="inch_exchange_now">快捷兑换</string>
+    <string name="eth_empty_tip">本地钱包暂无ETH钱包，请创建后重试</string>
+    <string name="eth_select_tip">本地钱包暂无ETH钱包，请选择后重试</string>
+
+    <string name="accelerate">加速</string>
+    <string name="transaction_completed">交易已完成，无法加速</string>
+    <string name="transaction_completed_cannot_be_cancelled">交易已完成，无法取消</string>
+    <string name="packing">打包中</string>
+    <string name="transaction_acceleration">交易加速</string>
+    <string name="cancel_the_deal">取消交易</string>
+    <string name="payment_information">支付信息</string>
+    <string name="speed_up_transactions">加速交易</string>
+    <string name="recommended">推荐(约3分钟)</string>
+    <!--    <string name="haste">急速(约1分钟)</string>-->
+    <string name="haste">急速(约15秒)</string>
+    <string name="before_acceleration">加速前</string>
+    <string name="after_acceleration">加速后</string>
+    <string name="confirm_acceleration">确认加速</string>
+
+    <string name="dapp_search">搜索DApp名称或输入链接</string>
+    <string name="underpaid_miners">矿工费不足</string>
+    <string name="not_sufficient_funds">余额不足</string>
+    <string name="dapp_not_found">搜索不到该应用</string>
+
+
+    <!--TODO TAF-->
+    <!--   TODO  tabbar-->
+    <string name="title_home">首页</string>
+    <string name="title_booking">预售</string>
+    <string name="title_my">我的</string>
+    <string name="title_found">发现</string>
+
+    <string name="dapp_swap">Swap</string>
+    <string name="dapp_layer2">Layer2</string>
+    <string name="dapp_financing">理财</string>
+    <string name="dapp_nft">NFT</string>
+    <string name="dapp_game">游戏</string>
+    <string name="dapp_other">其他</string>
+
+    <!--  没有按照UI图来-->
+    <string name="switch_language">切换语言</string>
+    <!--   没有-->
+    <string name="click_no_response">无效的点击</string>
+    <string name="select_country_or_area">选择国家/地区</string>
+    <string name="loading">加载中</string>
+    <!--   以下两项没有-->
+    <string name="inn_correct_email">请输入正确的邮箱地址</string>
+    <string name="please_select_user_agreement">请勾选用户协议</string>
+
+
+    <!--  TODO 我的页面-->
+    <string name="click_login">点击登录</string>
+    <string name="welcome_taf">欢迎来到TAF Chain</string>
+    <string name="my_id_auth">身份认证</string>
+    <string name="my_booking">我的预售</string>
+    <string name="my_promotion">我的推广</string>
+    <string name="setting">设置</string>
+
+    <!--   TODO 设置页面-->
+    <string name="account">账户</string>
+    <string name="language">语言</string>
+    <string name="change_psw">修改密码</string>
+    <string name="log_out">退出</string>
+    <string name="certified">已认证</string>
+    <string name="not_auth">未认证</string>
+    <string name="in_the_review">审核中</string>
+    <string name="has_refused">已拒绝</string>
+    <!--  没有-->
+    <string name="kyc_status_unknown">未知</string>
+    <string name="please_login">请先完成登录</string>
+    <string name="about_us_str">关于我们</string>
+    <string name="version">版本</string>
+    <string name="not_new_version">没有新版本</string>
+    <string name="subscriptions">申购资金 </string>
+    <string name="purchase_credits">申购额度</string>
+    <!--  没有-->
+    <string name="no_apply_record">暂无任何申购记录</string>
+
+    <!--   TODO 我的推广页面-->
+    <string name="promote_user">推广用户</string>
+    <string name="cumulative_rebate">累计返利</string>
+    <!--    <string name="cumulative_rebate_unit">累计返利 (USDT)</string>-->
+    <string name="promote_links">推广链接</string>
+    <string name="promotion_code">推广码</string>
+
+    <!--  TODO  推广用户-->
+    <!--  没有-->
+    <string name="no_search_data_str">暂时查询不到任何记录</string>
+    <string name="time">时间</string>
+    <!--  没有 UI图上是"推广用户"-->
+    <string name="invited_user">邀请用户</string>
+
+
+    <!--  TODO  累计返利-->
+    <string name="the_rebate_amount">返利额</string>
+    <string name="user">用户</string>
+    <string name="level">级别</string>
+    <string name="phase">阶段</string>
+    <string name="the_start">首轮</string>
+
+    <!--  TODO   我的预售-->
+    <string name="first_round">首轮</string>
+    <!--   没有 UI图上是"申购额度"-->
+    <string name="apply_money">申购金额</string>
+
+    <!--   TODO 身份认证-->
+    <string name="id_auth">身份认证</string>
+    <string name="search">搜索</string>
+    <string name="please_upload_id_photo">请上传证件照片</string>
+    <string name="upload_id_photo_tips1">1.证件照片信息清晰可见，不允许任何修改和遮挡;</string>
+    <!--   ios没有-->
+    <string name="upload_id_photo_tips2">2.支持 JPG、PNG格式，文件小于 2 M;</string>
+    <string name="positive">正面</string>
+    <string name="the_reverse">反面</string>
+
+    <!--  TODO  认证结果-->
+    <string name="country_or_area">国家/地区</string>
+    <string name="last_name">姓氏</string>
+    <string name="first_name">名字</string>
+    <string name="document_type">证件类型</string>
+    <string name="identity_number">证件号码</string>
+    <string name="birthday">出生日期</string>
+    <string name="phone_number">手机号码</string>
+    <string name="in_the_review_des">请您耐心等待\n
+我们将在收到申请后第一时间进行审核</string>
+    <string name="audit_failure_des">您的身份信息验证失败</string>
+    <!--  没有-->
+    <string name="kyc_result">认证结果</string>
+
+
+    <!--  TODO  上传认证信息以及照片提示-->
+    <string name="up_loading">上传中</string>
+
+    <!--  TODO  预售页面-->
+    <string name="please_login_dialog_content">只有登录用户才能够参与预售</string>
+    <string name="need_kyc_certification">需要完成KYC认证才能进行申购</string>
+    <string name="kyc_certification_is_review">KYC认证审核中,请稍后再试</string>
+    <string name="refused">KYC认证已被拒绝,请重新认证</string>
+    <string name="target_amount_total">目标金额:</string>
+    <!--  以下两项没有-->
+    <string name="persale_stage1">首轮预售 [第一阶段]</string>
+    <string name="persale_stage2">首轮预售 [第二阶段]</string>
+    <string name="persale_stage3"> 首轮预售[第三阶段]</string>
+    <string name="total_num">总量</string>
+    <string name="unit">份</string>
+    <!--  没有-->
+    <string name="minimum_limit">最低限购1份</string>
+    <string name="please_check_agreement">请先勾选申购协议!</string>
+    <string name="activity_not_Started">活动暂未开始</string>
+    <string name="activity_finished">活动已结束</string>
+    <!--  没有-->
+    <string name="left_amount">剩余份额</string>
+    <string name="unit_price">单价</string>
+    <string name="snapping_up_copies">抢购份数</string>
+    <string name="pay_money">需支付</string>
+    <string name="purchase_agreement">《申购协议》</string>
+    <!--  没有-->
+    <string name="pay">支付</string>
+    <string name="pay_tips">请通过数字货币交易所或者数字货币钱包向以上收款地址进行转账，到帐后经过官方审核将自动完成申购</string>
+    <string name="copy_success1">复制成功</string>
+    <string name="payments">支付额</string>
+    <string name="collection_address">收款地址二维码</string>
+    <string name="your_pay_link">您的独立USDT收款地址（Omni）</string>
+    <string name="payed_back">完成支付 返回</string>
+
+    <!--   TODO 弹窗-->
+    <string name="cancel">取消</string>
+    <string name="sure">确定</string>
+
+    <!--   TODO 发现页-->
+    <string name="news">新闻公告</string>
+    <string name="look_more">查看更多</string>
+    <string name="white_paper">白皮书</string>
+    <string name="help_manual">帮助手册</string>
+
+    <!--   TODO 首页-->
+    <string name="update_title">版本更新V</string>
+    <!--    <string name="version_v">V</string>-->
+    <!--    <string name="USDT_unit">USDT</string>-->
+
+    <!--   TODO 全局 大部分都没有-->
+    <string name="re_login_alert">登录失效，请重新登录</string>
+    <string name="retry_alert">请求失败，请重试</string>
+    <string name="server_error">服务器报错了，请稍后再访问</string>
+    <string name="time_out">访问服务器超时，请检查网络</string>
+    <string name="connect_error">网络链接失败，请检查网络</string>
+    <string name="upload_success_str">上传成功，请稍等...</string>
+    <string name="net_lost">网络丢失</string>
+    <string name="check_network">请检查网络</string>
+    <string name="load_failed">加载失败</string>
+    <string name="if_retry_again">是否重试</string>
+    <string name="retry_again">重试</string>
+    <string name="please_retry">请重试</string>
+    <string name="login_success">登录成功</string>
+    <string name="s_to_resend">s后重新发送</string>
+    <string name="get_email_code">重新发送</string>
+    <string name="get_code">获取验证码</string>
+    <string name="load_all_alert">已加载所有数据</string>
+    <string name="confirm_logout">确认退出?</string>
+
+    <!--   TODO 登录-->
+    <string name="already_register_email">该邮箱已注册，请直接登录</string>
+    <string name="please_input_email">请输入邮箱</string>
+    <string name="please_input_password">请输入密码</string>
+    <string name="please_input_password_again">请再次输入密码</string>
+    <!--    没有-->
+    <string name="email_not_registered">此邮箱未被注册，请直接注册</string>
+    <string name="pwd_is_different">两次密码不一致</string>
+    <string name="pwd_tips">至少8个字符，必须包含字母和数字</string>
+    <string name="modify_success">修改成功</string>
+    <string name="reset_pwd">重置密码</string>
+    <string name="input_email_code">请输入邮箱验证码</string>
+    <string name="please_input_new_password">请输入新密码</string>
+    <string name="please_input_new_password_again">请再次输入密码</string>
+    <string name="retrieve_pwd">找回密码</string>
+    <string name="register">注册</string>
+    <string name="had_taf_account">已有TAF Chain账号？</string>
+    <string name="login">登录</string>
+    <string name="set_pwd">设置密码</string>
+    <string name="password_tips">密码至少8个字符，\n
+必须包含字母和数字</string>
+    <string name="referees_id">推荐人ID（选填）</string>
+    <string name="input_referees_id">请输入推荐人ID</string>
+    <!--    没有-->
+    <string name="agree">我已阅读同意</string>
+    <string name="email_verification">邮箱验证</string>
+    <!--    没有-->
+    <string name="check_email_alert">若未收到邮件，请检查邮箱中的垃圾邮件</string>
+    <string name="forget_pwd">忘记密码？</string>
+    <string name="not_taf_account">还没有TAF Chain账号？</string>
+
+    <!--    服务端器约定的错误信息-->
+    <string name="network_request_failed">网络请求失败</string>
+    <string name="server_error100101">参数错误</string>
+    <string name="server_error100104">邮箱格式不正确</string>
+    <string name="server_error100111">验证码错误</string>
+    <string name="server_error100112">验证码过期</string>
+    <string name="server_error100113">验证码错误</string>
+    <string name="server_error100115">邀请码不存在</string>
+    <string name="server_error100116">邮箱已注册</string>
+
+    <string name="server_error100201">参数错误</string>
+    <string name="server_error100202">账号或密码错误</string>
+    <string name="server_error100203">登录失败</string>
+    <string name="server_error101503">重置密码失败</string>
+    <string name="server_error101504">新旧密码不能相同</string>
+    <string name="server_error101505">验证码错误</string>
+    <string name="server_error101506">验证码过期</string>
+
+
+    <string name="server_error101701">参数错误</string>
+    <string name="server_error101702">获取失败</string>
+    <string name="server_error101703">发送频率超过限制</string>
+    <!--    <string name="server_error101703">获取验证码太频繁</string>-->
+    <string name="server_error101704">邮箱已被注册</string>
+
+    <string name="server_error102002">超出预售额度限制</string>
+    <string name="server_error102003">获取地址失败</string>
+
+    <string name="server_error102101">证件类型输入错误</string>
+    <string name="server_error102102">参数错误</string>
+    <string name="server_error102103">参数错误</string>
+    <string name="server_error102104">参数错误</string>
+    <string name="server_error102105">证件正面照片上传失败</string>
+    <string name="server_error102106">证件背面照片上传失败</string>
+
+    <string name="server_error102601">参数错误</string>
+    <string name="server_error102602">转让失败</string>
+    <string name="server_error102603">用户不存在</string>
+
+    <string name="server_error102605">余额不足</string>
+
+    <string name="server_error102607">转让对方未KYC认证</string>
+
+    <string name="server_error102801">参数错误</string>
+    <string name="server_error102802">获取失败</string>
+    <string name="server_error102803">获取验证码太频繁</string>
+    <string name="server_error103001">授权码过期</string>
+    <string name="server_error102903">账号或密码错误</string>
+
+
+    <!--    需要加上去-->
+    <!--    <string name="unit_price_taft">1份=20,000 TAFT</string>-->
+    <!--    <string name="money">54,000 USDT</string>-->
+    <string name="purchase_agreement_title">申购协议</string>
+    <!--    TODO-->
+
+    <string name="buy_num_not_greater_than_the_remaining">抢购份额不能大于剩余的份额</string>
+    <string name="select_from_album">从相册中选择</string>
+    <string name="take_photo">拍照</string>
+    <string name="audit_failure">审核失败</string>
+    <string name="please_select_your_country">请选择您的国家</string>
+    <string name="input_first_name">请输入您的姓氏</string>
+    <string name="input_last_name">请输入您的名字</string>
+    <string name="please_input_your_document_type">请选择您的证件类型</string>
+    <string name="please_input_your_identity_number">请输入证件号码</string>
+    <string name="please_input_your_birthday">请选择出生日期</string>
+    <string name="please_input_your_phone_number">请输入手机号码</string>
+    <string name="id_card">身份证</string>
+    <string name="passport">护照</string>
+    <string name="driver_license">驾驶证</string>
+    <string name="account_does_not_exist">账户不存在</string>
+    <string name="is_not_contain_number">未包含数字</string>
+    <string name="is_not_contain_letter">未包含字母</string>
+    <string name="at_least_8_chars">至少8个字符</string>
+    <string name="inviter_not_exist">推荐人ID不存在</string>
+    <string name="user_agreement1">用户协议</string>
+    <!--    <string name="update_content">1.本次更新修复了个人中心的bug更新修复了个人中心的bug; \n 2.修复了网络不可用；\n3.APP的UI界面设计上的优化。</string>-->
+    <string name="update_now">立即更新</string>
+    <string name="downloading">下载中…</string>
+    <string name="upload_success">上传成功</string>
+    <string name="to_fill_in">重新填写</string>
+    <string name="invite_friends">邀请好友</string>
+
+    <!--    <string name="english">英文</string>-->
+    <string name="change_password">修改密码</string>
+    <string name="news_detail">新闻详情</string>
+    <!--    <string name="please_kyc_dialog_content">需要完成KYC认证，-->
+    <!--并且通过验证后才能进行申购</string>-->
+    <string name="purchase_amount">申购额</string>
+    <!--    <string name="level_en">Lv</string>-->
+    <string name="login_out_tips">您确定退出登录吗</string>
+    <string name="switch_language_success">语言切换成功</string>
+    <string name="clear_cache">清理缓存</string>
+    <string name="cleaning_up">清理中</string>
+    <string name="clean_up_completed">清理完成</string>
+    <string name="fill_in_again">重新填写</string>
+    <string name="sold_out">已售罄</string>
+
+
+    <string name="is_switch_language">您确定要切换语言吗</string>
+    <!--网络请求错误提示-->
+    <string name="unknown_exception">未知错误</string>
+    <string name="unknown_host_exception">网络不可用,请连网重试!</string>
+    <string name="socket_timeout_exception">请求网络超时,请连网重试!</string>
+    <string name="http_exception500_599">服务器处理请求出错</string>
+    <string name="invalid_token_401">登录失效,请重新登录!</string>
+    <string name="server_exception400_499">服务器无法处理请求</string>
+    <string name="server_exception300_399">请求被重定向到其他页面</string>
+    <string name="parse_exception">数据解析错误</string>
+    <string name="cannot_less_or_equal_0">抢购份额不能小于等于0</string>
+
+    <string name="transfer_record">记录</string>
+    <string name="current_quota">当前额度</string>
+    <string name="quota">额度</string>
+    <string name="transfer_out">转出额度</string>
+    <string name="pwd_confirm">登录密码确认</string>
+    <string name="transfer1">转让</string>
+    <string name="input_email">请输入对方邮箱</string>
+    <string name="input_transfer_amount">请输入转让额度</string>
+    <string name="please_input_pwd">请输入登录密码</string>
+    <string name="transfer_prompt">转让额度不能小于1TAFT</string>
+    <string name="transfer_successful">转让成功!</string>
+    <string name="transfer_amount1">转让额度</string>
+    <string name="transfer_record_title">转让记录</string>
+    <string name="transfer_auth_verify">身份验证</string>
+
+
+</resources>

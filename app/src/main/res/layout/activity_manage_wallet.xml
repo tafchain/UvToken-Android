@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_17"
+        android:orientation="vertical"
+        tools:context=".ui.manageWallet.ui.ManageWalletActivity">
+
+        <include
+            android:id="@+id/iTitle"
+            layout="@layout/common_title" />
+
+        <LinearLayout
+            android:id="@+id/llWalletName"
+            style="@style/MatchWrap"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/dp_20">
+
+            <TextView
+                android:id="@+id/tvNameOrAddress"
+                style="@style/WrapWrap"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_14"
+                android:text="@string/wallet_name"
+                android:textColor="@color/color_20"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_2"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tvName"
+                style="@style/WrapWrap"
+                android:layout_gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/color_10"
+                android:textSize="@dimen/sp_12" />
+
+            <ImageView
+                android:id="@+id/ivChangeName"
+                style="@style/WrapWrap"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/icon_ckgd" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/v_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:background="@color/color_21" />
+
+        <LinearLayout
+            android:id="@+id/llChangePwd"
+            style="@style/MatchWrap"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/WrapWrap"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_14"
+                android:layout_marginBottom="@dimen/dp_14"
+                android:text="@string/modify_wallet_pwd"
+                android:textColor="@color/color_20"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_2"
+                android:layout_weight="1" />
+
+            <ImageView
+                style="@style/WrapWrap"
+                android:layout_marginTop="@dimen/dp_14"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_14"
+                android:src="@mipmap/icon_ckgd" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/v_2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:background="@color/color_21" />
+
+
+        <LinearLayout
+            android:id="@+id/llMnemonicBackup"
+            style="@style/MatchWrap"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/WrapWrap"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_14"
+                android:layout_marginBottom="@dimen/dp_14"
+                android:text="@string/mnemonic_backup_title"
+                android:textColor="@color/color_20"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_2"
+                android:layout_weight="1" />
+
+            <ImageView
+                style="@style/WrapWrap"
+                android:layout_marginTop="@dimen/dp_14"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_14"
+                android:src="@mipmap/icon_ckgd" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/v_3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:background="@color/color_21" />
+
+        <LinearLayout
+            android:id="@+id/llBackupPrivateKey"
+            style="@style/MatchWrap"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/WrapWrap"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_14"
+                android:layout_marginBottom="@dimen/dp_14"
+                android:text="@string/backup_private_key"
+                android:textColor="@color/color_20"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_2"
+                android:layout_weight="1" />
+
+            <ImageView
+                style="@style/WrapWrap"
+                android:layout_marginTop="@dimen/dp_14"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_14"
+                android:src="@mipmap/icon_ckgd" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+        <TextView
+            android:id="@+id/tvDeleteWallet"
+            style="@style/MatchWrap"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_30"
+            android:background="@drawable/delete_5_shape"
+            android:gravity="center"
+            android:padding="@dimen/dp_14"
+            android:text="@string/delete_wallet"
+            android:textColor="@color/color_14"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+</layout>

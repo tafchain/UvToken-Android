@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_20"
+    android:layout_marginTop="@dimen/dp_30"
+    android:layout_marginRight="@dimen/dp_20">
+
+    <ImageView
+        android:id="@+id/ivCoinIcon"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/icon_btc_40" />
+
+    <TextView
+        android:id="@+id/tvCoinType"
+        style="@style/WrapWrap"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:layout_toRightOf="@+id/ivCoinIcon"
+        android:text="ETH私钥"
+        android:textColor="@color/color_5"
+        android:textSize="@dimen/sp_16" />
+
+    <ImageView
+        style="@style/WrapWrap"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/icon_ckgd" />
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_wallet"
+        android:enabled="true"
+        android:icon="@drawable/wallet_nav_icon_selector"
+        android:title="@string/title_wallet" />
+<!--    android:icon="@drawable/ic_audiotrack_black_24dp"-->
+
+<!--    <item-->
+<!--        android:id="@+id/navigation_transaction"-->
+<!--        android:icon="@drawable/transaction_nav_icon_selector"-->
+<!--        android:enabled="true"-->
+<!--        android:title="@string/transaction" />-->
+<!--    android:icon="@drawable/ic_backup_black_24dp"-->
+<!--    <item-->
+<!--        android:id="@+id/navigation_quotes"-->
+<!--        android:icon="@drawable/ic_launcher_foreground"-->
+<!--        android:enabled="true"-->
+<!--        android:title="@string/title_quotes" />-->
+    <item
+        android:id="@+id/navigation_mine"
+        android:icon="@drawable/mine_nav_icon_selector"
+        android:enabled="true"
+        android:title="@string/title_mine" />
+<!--    android:icon="@drawable/ic_camera_black_24dp"-->
+
+</menu>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <com.yongqi.wallet.view.ShadowRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_swap_bg"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="20dp"
+            bind:shadow_color="#33777A89"
+            bind:shadow_radius="8dp"
+            bind:shadow_blur="10dp"
+            android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_dapp_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        </com.yongqi.wallet.view.ShadowRelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</layout>
+

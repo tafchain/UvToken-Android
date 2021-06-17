@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_17"
+        android:orientation="vertical"
+        tools:context=".ui.addOptional.ui.SearchAddOptionalActivity">
+
+        <LinearLayout
+            android:id="@+id/llHead"
+            style="@style/MatchWrap"
+            android:paddingTop="20dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_20"
+                android:layout_weight="1"
+                android:background="@drawable/search_bg_shape">
+
+                <ImageView
+                    android:id="@+id/ivSearch"
+                    style="@style/WrapWrap"
+                    android:paddingLeft="@dimen/dp_20"
+                    android:paddingTop="@dimen/dp_8"
+                    android:paddingBottom="@dimen/dp_8"
+                    android:src="@mipmap/icon_sousuo" />
+
+                <EditText
+                    android:id="@+id/etSearch"
+                    style="@style/MatchWrap"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_toRightOf="@+id/ivSearch"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:hint="@string/enter_token_name"
+                    android:textColorHint="@color/color_10"
+                    android:textSize="@dimen/sp_14" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvCancel"
+                style="@style/WrapWrap"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_12"
+                android:paddingRight="@dimen/dp_20"
+                android:text="@string/cancel_0"
+                android:textColor="@color/color_5"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_fee"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+</layout>

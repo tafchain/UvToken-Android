@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        style="@style/MatchMatch"
+        android:orientation="vertical"
+        tools:context=".ui.importWallet.ui.ImportAddCurrencyActivity">
+
+        <include
+            android:id="@+id/iTitle"
+            layout="@layout/common_title" />
+
+        <TextView
+            style="@style/MatchWrap"
+            android:background="@color/color_15"
+            android:gravity="center"
+            android:padding="@dimen/dp_8"
+            android:text="@string/will_support_more_main_chain_currencies"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12" />
+        <!--    做成RecyclerView-->
+        <RelativeLayout
+            android:id="@+id/rlBTC"
+            style="@style/MatchWrap"
+            android:layout_marginTop="@dimen/dp_30"
+            android:layout_marginBottom="@dimen/dp_30"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20">
+
+            <ImageView
+                android:id="@+id/ivBTCIcon"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:src="@mipmap/icon_btc_40" />
+
+            <TextView
+                android:id="@+id/tvBTCShorthandName"
+                style="@style/WrapWrap"
+                android:layout_marginLeft="@dimen/dp_6"
+                android:layout_toRightOf="@+id/ivBTCIcon"
+                android:text="BTC"
+                android:textColor="@color/color_5"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:id="@+id/tvBTCName"
+                style="@style/WrapWrap"
+                android:layout_below="@+id/tvBTCShorthandName"
+                android:layout_marginLeft="@dimen/dp_6"
+
+                android:layout_toRightOf="@+id/ivBTCIcon"
+                android:text="Bitcoin"
+                android:textColor="@color/color_9"
+                android:textSize="@dimen/sp_12" />
+
+
+            <ImageView
+                style="@style/WrapWrap"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:src="@mipmap/icon_gx" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlETH"
+            style="@style/MatchWrap"
+            android:layout_marginBottom="@dimen/dp_30"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20">
+
+            <ImageView
+                android:id="@+id/ivETHIcon"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:src="@mipmap/icon_eth" />
+
+            <TextView
+                android:id="@+id/tvETHShorthandName"
+                style="@style/WrapWrap"
+                android:layout_marginLeft="@dimen/dp_6"
+                android:layout_toRightOf="@+id/ivETHIcon"
+                android:text="ETH"
+                android:textColor="@color/color_5"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:id="@+id/tvETHName"
+                style="@style/WrapWrap"
+                android:layout_below="@+id/tvETHShorthandName"
+                android:layout_marginLeft="@dimen/dp_6"
+                android:layout_toRightOf="@+id/ivETHIcon"
+                android:text="Ethereum"
+                android:textColor="@color/color_9"
+                android:textSize="@dimen/sp_12" />
+
+
+            <ImageView
+                style="@style/WrapWrap"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:src="@mipmap/icon_gx" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/MatchWrap"
+            android:layout_marginBottom="@dimen/dp_30"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20">
+
+            <ImageView
+                android:id="@+id/ivTRX"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:src="@mipmap/ic_trx" />
+
+            <TextView
+                style="@style/WrapWrap"
+                android:id="@+id/tv_trx_name"
+                android:layout_marginLeft="@dimen/dp_6"
+                android:layout_toRightOf="@+id/ivTRX"
+                android:text="TRX"
+                android:textColor="@color/color_5"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                style="@style/WrapWrap"
+                android:layout_below="@+id/tv_trx_name"
+                android:layout_marginLeft="@dimen/dp_6"
+                android:layout_toRightOf="@+id/ivTRX"
+                android:text="TRON"
+                android:textColor="@color/color_9"
+                android:textSize="@dimen/sp_12" />
+
+
+            <ImageView
+                style="@style/WrapWrap"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:src="@mipmap/icon_gx" />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/rlAECO"
+            style="@style/MatchWrap"
+
+            android:layout_marginBottom="@dimen/dp_30"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20">
+            <!--            android:visibility="gone"-->
+            <ImageView
+                android:id="@+id/ivAECOIcon"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:src="@mipmap/arther_icon" />
+
+
+            <TextView
+                android:id="@+id/tvAECOShorthandName"
+                style="@style/WrapWrap"
+                android:layout_marginLeft="@dimen/dp_6"
+                android:layout_toRightOf="@+id/ivAECOIcon"
+                android:text="AECO"
+                android:textColor="@color/color_5"
+                android:textSize="@dimen/sp_16" />
+
+
+            <TextView
+                android:id="@+id/tvAECOName"
+                style="@style/WrapWrap"
+                android:layout_below="@+id/tvAECOShorthandName"
+                android:layout_marginLeft="@dimen/dp_6"
+                android:layout_toRightOf="@+id/ivAECOIcon"
+                android:text="Arthur-ex"
+                android:textColor="@color/color_9"
+                android:textSize="@dimen/sp_12" />
+
+
+            <ImageView
+                style="@style/WrapWrap"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:src="@mipmap/icon_gx" />
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_30"
+            android:background="@drawable/common_btn_select"
+            android:enabled="true"
+            android:gravity="center"
+            android:text="@string/next"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</layout>

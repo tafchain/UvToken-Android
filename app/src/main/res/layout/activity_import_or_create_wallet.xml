@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        style="@style/MatchMatch"
+        android:orientation="vertical"
+        tools:context=".ui.uvtoken.ui.ImportOrCreateWalletActivity">
+
+        <LinearLayout
+            android:id="@+id/llBg"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/create_or_import_wallet_shape"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/llMultiWallet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/ivTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tvTop"
+                    style="@style/WrapWrap"
+                    android:layout_marginLeft="@dimen/dp_28"
+                    android:layout_marginTop="@dimen/dp_98"
+                    android:text="@string/multi_chain_wallet"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_30" />
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:layout_below="@+id/tvTop"
+                    android:layout_marginLeft="@dimen/dp_28"
+                    android:layout_marginTop="@dimen/dp_6"
+                    android:text="@string/support_public_chains"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_18" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/ivCoin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/MatchWrap"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlCreateWallet"
+                style="@style/MatchWrap"
+                android:layout_margin="@dimen/dp_20"
+                android:background="@drawable/import_or_create_wallet_btn_shape"
+                android:padding="@dimen/dp_16">
+
+                <ImageView
+                    android:id="@+id/ivCj"
+                    style="@style/WrapWrap"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:src="@mipmap/icon_cjqb" />
+
+                <TextView
+                    android:id="@+id/tvCj"
+                    style="@style/WrapWrap"
+                    android:layout_toRightOf="@+id/ivCj"
+                    android:text="@string/create_wallet"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:layout_below="@+id/tvCj"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:layout_toRightOf="@+id/ivCj"
+                    android:text="@string/not_have_wallet"
+                    android:textColor="@color/white_80"
+                    android:textSize="@dimen/sp_13" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rlImportWallet"
+                style="@style/MatchWrap"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_20"
+                android:background="@drawable/import_or_create_wallet_btn_shape"
+                android:padding="@dimen/dp_16">
+
+
+                <ImageView
+                    android:id="@+id/ivDr"
+                    style="@style/WrapWrap"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:src="@mipmap/icon_drqb" />
+
+                <TextView
+                    android:id="@+id/tvDr"
+                    style="@style/WrapWrap"
+                    android:layout_toRightOf="@+id/ivDr"
+                    android:text="@string/import_wallet"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_14" />
+
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:layout_below="@+id/tvDr"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:layout_toRightOf="@+id/ivDr"
+                    android:text="@string/have_wallet"
+                    android:textColor="@color/white_80"
+                    android:textSize="@dimen/sp_13" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

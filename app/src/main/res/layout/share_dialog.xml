@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchMatch"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <!--分享出去的图片 == View-->
+    <LinearLayout
+        android:id="@+id/llSharedView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dp_48"
+        android:layout_marginRight="@dimen/dp_48"
+        android:background="@drawable/shared_bg_shape"
+        android:orientation="vertical">
+
+        <ImageView
+            style="@style/WrapWrap"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginBottom="@dimen/dp_4"
+            android:src="@mipmap/pic_logo_ewm" />
+
+        <LinearLayout
+            style="@style/MatchWrap"
+
+            android:background="@drawable/receive_qr_bg_shape"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/WrapWrap"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_32"
+                android:text="@string/receive_qr"
+                android:textColor="@color/color_5"
+                android:textSize="@dimen/sp_14" />
+
+            <ImageView
+                android:id="@+id/ivQr"
+                android:layout_width="@dimen/dp_120"
+                android:layout_height="@dimen/dp_120"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_30"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/MatchWrap"
+            android:layout_marginBottom="@dimen/dp_24"
+            android:background="@drawable/receive_address_bg_shape"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/WrapWrap"
+                android:layout_marginLeft="@dimen/dp_14"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_14"
+                android:text="@string/receive_address"
+                android:textColor="@color/color_5"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/tvReceiveAddress2"
+                style="@style/WrapWrap"
+                android:layout_marginLeft="@dimen/dp_14"
+                android:layout_marginTop="@dimen/dp_6"
+                android:layout_marginRight="@dimen/dp_14"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:text=""
+                android:textColor="@color/color_9"
+                android:textSize="@dimen/sp_12" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        style="@style/MatchWrap"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvShare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:paddingTop="@dimen/dp_16"
+            android:paddingBottom="@dimen/dp_16"
+            android:text="@string/share_it"
+            android:textColor="@color/color_5"
+            android:textSize="@dimen/sp_14" />
+
+        <include layout="@layout/common_line2" />
+
+        <TextView
+            android:id="@+id/tvCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:paddingTop="@dimen/dp_16"
+            android:paddingBottom="@dimen/dp_16"
+            android:text="@string/cancel_0"
+            android:textColor="@color/color_10"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+</LinearLayout>

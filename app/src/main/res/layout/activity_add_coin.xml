@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        style="@style/MatchMatch"
+        android:background="@color/color_17"
+        android:orientation="vertical"
+        tools:context=".ui.addCoin.ui.AddCoinActivity">
+
+        <LinearLayout
+            android:id="@+id/llHead"
+            style="@style/MatchWrap"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_20"
+                android:layout_weight="1"
+
+                android:background="@drawable/search_bg_shape">
+
+                <ImageView
+                    android:id="@+id/ivSearch"
+                    style="@style/WrapWrap"
+                    android:paddingLeft="@dimen/dp_20"
+                    android:paddingTop="@dimen/dp_8"
+                    android:paddingBottom="@dimen/dp_8"
+                    android:src="@mipmap/icon_sousuo" />
+
+                <EditText
+                    android:id="@+id/etSearch"
+                    style="@style/MatchWrap"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_toRightOf="@+id/ivSearch"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:hint="@string/please_enter_coin_name"
+                    android:textColorHint="@color/color_10"
+                    android:textSize="@dimen/sp_14" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvCancel"
+                style="@style/WrapWrap"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_12"
+                android:paddingRight="@dimen/dp_20"
+                android:text="@string/cancel_0"
+                android:textColor="@color/color_5"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvPrompt"
+            style="@style/MatchWrap"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/dp_20"
+            android:text="@string/ERC20_coin"
+            android:textColor="@color/color_5"
+            android:visibility="gone"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/tv_add_chain"
+            style="@style/MatchWrap"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingTop="0.5dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/dp_20"
+            android:text="@string/add_coin"
+            android:drawableEnd="@mipmap/ic_arrow_right"
+            android:textColor="@color/color_5"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/tvHotCoin"
+            style="@style/MatchWrap"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingTop="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20"
+            android:paddingBottom="@dimen/dp_10"
+            android:text="@string/popular_coins"
+            android:textColor="@color/color_5"
+            android:textSize="@dimen/sp_14" />
+
+        <!--        TODO 做成RecyclerView-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvERC20Coin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+
+<!--        <RelativeLayout-->
+<!--            style="@style/MatchWrap"-->
+<!--            android:background="@color/white"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:paddingLeft="@dimen/dp_20"-->
+<!--            android:paddingTop="@dimen/dp_10"-->
+<!--            android:paddingRight="@dimen/dp_20"-->
+<!--            android:paddingBottom="@dimen/dp_10">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/ivCoinIcon"-->
+<!--                style="@style/WrapWrap"-->
+<!--                android:src="@mipmap/icon_usdt_40" />-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/ll"-->
+<!--                style="@style/WrapWrap"-->
+<!--                android:layout_marginLeft="@dimen/dp_8"-->
+<!--                android:layout_toRightOf="@+id/ivCoinIcon"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tvCoinName"-->
+<!--                    style="@style/WrapWrap"-->
+<!--                    android:text="USDT"-->
+<!--                    android:textColor="@color/color_5"-->
+<!--                    android:textSize="@dimen/sp_16" />-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/ivLogo"-->
+<!--                    style="@style/WrapWrap"-->
+<!--                    android:layout_marginLeft="@dimen/dp_6"-->
+<!--                    android:src="@mipmap/icon_omni" />-->
+<!--            </LinearLayout>-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvLinks"-->
+<!--                style="@style/WrapWrap"-->
+<!--                android:layout_below="@+id/ll"-->
+<!--                android:layout_marginLeft="@dimen/dp_8"-->
+<!--                android:layout_marginTop="@dimen/dp_2"-->
+<!--                android:layout_toRightOf="@+id/ivCoinIcon"-->
+<!--                android:text="0x5D11326...af4adc023"-->
+<!--                android:textColor="@color/color_10"-->
+<!--                android:textSize="@dimen/sp_12" />-->
+
+
+<!--            <ImageView-->
+<!--                android:id="@+id/ivAdd"-->
+<!--                style="@style/WrapWrap"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:src="@mipmap/icon_lb_tj" />-->
+<!--        </RelativeLayout>-->
+    </LinearLayout>
+</layout>

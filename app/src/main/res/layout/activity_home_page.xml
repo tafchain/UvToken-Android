@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        style="@style/MatchMatch"
+        tools:openDrawer="left">
+
+        <LinearLayout
+            android:id="@+id/ll"
+            style="@style/MatchMatch"
+            android:background="@color/color_17"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/nav_host_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+            <!--            app:defaultNavHost="true"-->
+            <!--            app:navGraph="@navigation/mobile_navigation"-->
+            <!--            android:name="androidx.navigation.fragment.NavHostFragment"-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_gravity="bottom"
+                android:background="@color/white"
+                app:cardElevation="3dp">
+
+                <RadioGroup
+                    android:id="@+id/main_radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <com.yongqi.wallet.view.TipButton
+                        android:id="@+id/main_tip_button_wallet"
+                        style="@style/RB_Style"
+                        android:checked="true"
+                        android:drawableTop="@drawable/main_tip_button_wallet"
+                        android:text="@string/title_wallet" />
+
+                    <com.yongqi.wallet.view.TipButton
+                        android:id="@+id/main_tip_button_quotation"
+                        style="@style/RB_Style"
+                        android:drawableTop="@drawable/main_tip_button_quotation"
+                        android:text="@string/swap" />
+
+                    <com.yongqi.wallet.view.TipButton
+                        android:id="@+id/main_tip_button_transaction"
+                        style="@style/RB_Style"
+                        android:visibility="gone"
+                        android:drawableTop="@drawable/main_tip_button_transaction"
+                        android:text="@string/transaction" />
+
+                    <com.yongqi.wallet.view.TipButton
+                        android:id="@+id/main_tip_financial_management"
+                        style="@style/RB_Style"
+                        android:drawableTop="@drawable/main_tip_button_financial"
+                        android:text="@string/financial_management" />
+
+                    <com.yongqi.wallet.view.TipButton
+                        android:id="@+id/main_tip_button_mine"
+                        style="@style/RB_Style"
+                        android:drawableTop="@drawable/main_tip_button_mine"
+                        android:text="@string/title_mine" />
+
+                </RadioGroup>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <fragment
+            android:id="@+id/fWallet"
+            android:name="com.yongqi.wallet.ui.main.ui.WalletManagementFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left" />
+    </androidx.drawerlayout.widget.DrawerLayout>
+</layout>

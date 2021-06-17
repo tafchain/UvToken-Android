@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.receiveAndTransfer.transfer.ui.TransferActivity">
+
+        <include
+            android:id="@+id/iTitle"
+            layout="@layout/common_title" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:transcriptMode="normal"
+            android:layout_below="@+id/iTitle">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/WrapWrap"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:text="@string/transfer_address"
+                    android:textColor="@color/color_5"
+                    android:textSize="@dimen/sp_14" />
+
+                <LinearLayout
+                    style="@style/MatchWrap"
+                    android:orientation="horizontal">
+
+
+                    <!--            <TextView-->
+                    <!--                android:id="@+id/tvTransferAddress"-->
+                    <!--                android:layout_width="0dp"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:layout_marginLeft="@dimen/dp_20"-->
+                    <!--                android:layout_marginTop="@dimen/dp_10"-->
+                    <!--                android:layout_weight="1"-->
+                    <!--                android:singleLine="true"-->
+                    <!--                android:text=""-->
+                    <!--                android:textColor="@color/color_5"-->
+                    <!--                android:textSize="@dimen/sp_14" />-->
+
+                    <EditText
+                        android:id="@+id/etTransferAddress"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:singleLine="true"
+                        android:text=""
+                        android:theme="@style/EditTextLineColor2"
+                        android:textColor="@color/color_5"
+                        android:textSize="@dimen/sp_14" />
+
+                    <ImageView
+                        android:id="@+id/ivTransferAddress"
+                        style="@style/WrapWrap"
+                        android:layout_marginRight="@dimen/dp_12"
+                        android:padding="@dimen/dp_8"
+                        android:src="@mipmap/icon_lianxir" />
+                </LinearLayout>
+
+                <include layout="@layout/common_line1" />
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:text="@string/transfer_amount"
+                    android:textColor="@color/color_5"
+                    android:textSize="@dimen/sp_14" />
+
+                <RelativeLayout
+                    android:id="@+id/rlTransferAmount"
+                    style="@style/MatchWrap"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginRight="@dimen/dp_20">
+
+                    <EditText
+                        android:id="@+id/etTransferAmount"
+                        style="@style/MatchWrap"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/color_10"
+                        android:textSize="@dimen/sp_14"
+                        android:theme="@style/EditTextLineColor2" />
+
+
+                    <TextView
+                        android:id="@+id/tvAll"
+                        style="@style/WrapWrap"
+                        android:layout_alignParentRight="true"
+                        android:paddingLeft="@dimen/dp_20"
+                        android:paddingTop="@dimen/dp_10"
+                        android:paddingBottom="@dimen/dp_6"
+                        android:text="@string/all"
+                        android:textColor="@color/color_12"
+                        android:textSize="@dimen/sp_14" />
+
+                </RelativeLayout>
+
+                <!--        资产 1 BTC-->
+                <TextView
+                    android:id="@+id/tvAllAmount"
+                    style="@style/WrapWrap"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="@dimen/dp_6"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:text=""
+                    android:textColor="@color/color_10"
+                    android:textSize="@dimen/sp_12" />
+
+
+                <RelativeLayout
+                    style="@style/MatchWrap"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        style="@style/WrapWrap"
+                        android:id="@+id/tv_title_fee"
+                        android:text="@string/absenteeism"
+                        android:textColor="@color/color_5"
+                        android:textSize="@dimen/sp_14" />
+
+                    <ImageView
+                        android:id="@+id/iv_fee"
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/tv_title_fee"
+                        android:src="@mipmap/ic_tip"/>
+
+                    <TextView
+                        android:id="@+id/tvAbsenteeismCurrency"
+                        style="@style/WrapWrap"
+                        android:layout_alignParentRight="true"
+                        android:text="0 TRX"
+                        android:textColor="@color/color_20"
+                        android:textSize="@dimen/sp_14" />
+                    <!--            0.00013877 ETH-->
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tvAbsenteeismRmb"
+                    style="@style/WrapWrap"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:text=""
+                    android:textColor="@color/color_10"
+                    android:textSize="@dimen/sp_12" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <Button
+            android:id="@+id/btnCommit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            android:layout_gravity="bottom"
+            android:layout_margin="@dimen/dp_20"
+            android:background="@drawable/common_btn_select"
+            android:enabled="false"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:text="@string/commit"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14" />
+    </RelativeLayout>
+</layout>

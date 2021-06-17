@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.scan.ui.ScanQrActivity">
+
+        <View
+            android:id="@+id/v"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_2" />
+
+        <RelativeLayout
+            android:id="@+id/rl_my_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <!--            <FrameLayout-->
+            <!--                android:id="@+id/fl_my_container"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="match_parent" />-->
+
+
+            <!--            https://github.com/bingoogolapple/BGAQRCode-Android-->
+            <cn.bingoogolapple.qrcode.zxing.ZXingView
+                android:id="@+id/zxingview"
+                style="@style/MatchMatch"
+                app:qrcv_animTime="1000"
+                app:qrcv_borderColor="@android:color/white"
+                app:qrcv_borderSize="@dimen/dp_1"
+                app:qrcv_cornerColor="@color/color_7"
+                app:qrcv_cornerLength="@dimen/dp_20"
+                app:qrcv_cornerSize="@dimen/dp_2"
+                app:qrcv_customScanLineDrawable="@drawable/scan_icon_scanline"
+                app:qrcv_maskColor="#33FFFFFF"
+                app:qrcv_rectWidth="@dimen/dp_240"
+                app:qrcv_scanLineColor="@color/color_7"
+                app:qrcv_scanLineSize="@dimen/dp_1"
+                app:qrcv_topOffset="@dimen/dp_200" />
+
+            <RelativeLayout style="@style/MatchWrap">
+
+                <ImageView
+                    android:id="@+id/ivClose"
+                    style="@style/WrapWrap"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/dp_12"
+                    android:src="@mipmap/icon_back_w" />
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:text="扫一扫"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_18" />
+
+
+                <TextView
+                    android:id="@+id/tvPhotoAlbum"
+                    style="@style/WrapWrap"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/dp_12"
+                    android:text="相册"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_16" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/WrapWrap"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/dp_30"
+                android:text="@string/scan_prompt"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_14" />
+        </RelativeLayout>
+
+
+        <!--        <TextView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:background="@color/white"-->
+        <!--            android:gravity="center"-->
+        <!--            android:padding="@dimen/dp_20"-->
+        <!--            android:text="@string/scan_qr"-->
+        <!--            android:textColor="@color/black"-->
+        <!--            android:textSize="@dimen/sp_18" />-->
+    </LinearLayout>
+</layout>

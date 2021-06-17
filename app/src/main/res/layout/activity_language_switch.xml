@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_17"
+        android:orientation="vertical"
+        tools:context=".ui.mine.ui.LanguageSwitchActivity">
+
+        <include
+            android:id="@+id/iTitle"
+            layout="@layout/common_title" />
+
+        <RelativeLayout
+            android:id="@+id/rlChinese"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/dp_20">
+
+            <!--        <item name="android:layout_height">wrap_content</item>-->
+            <!--        <item name="android:layout_width">match_parent</item>-->
+            <!--        <item name="android:textSize">@dimen/sp_14</item>-->
+            <!--        <item name="android:button">@null</item>-->
+            <!--        <item name="android:paddingLeft">@dimen/dp_20</item>-->
+            <!--        <item name="android:paddingRight">@dimen/dp_20</item>-->
+            <!--        <item name="android:paddingTop">@dimen/dp_14</item>-->
+            <!--        <item name="android:paddingBottom">@dimen/dp_14</item>-->
+            <!--        <item name="android:textColor">@drawable/rb_language_selector</item>-->
+            <TextView
+                android:id="@+id/tvChinese"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="中文"
+                android:textColor="@color/color_5"
+
+                android:textSize="@dimen/sp_14" />
+
+            <ImageView
+                android:id="@+id/ivChinese"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/icon_gx" />
+        </RelativeLayout>
+
+        <include
+
+            layout="@layout/common_line1" />
+
+        <RelativeLayout
+            android:id="@+id/rlEnglish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/dp_20">
+
+            <TextView
+                android:id="@+id/tvEnglish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="English"
+                android:textColor="@color/color_5"
+
+                android:textSize="@dimen/sp_14" />
+
+            <ImageView
+                android:id="@+id/ivEnglish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/icon_gx"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

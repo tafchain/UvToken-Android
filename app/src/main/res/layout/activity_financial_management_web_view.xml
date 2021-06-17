@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+
+    <LinearLayout
+        style="@style/MatchMatch"
+        android:orientation="vertical"
+        tools:context=".ui.wallet.ui.AgreementActivity">
+
+        <include
+            android:id="@+id/iTitle"
+            layout="@layout/common_title" />
+
+        <RelativeLayout
+            android:id="@+id/web_id_root"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+<!--        <include layout="@layout/common_pb" />-->
+<!--        <WebView-->
+<!--            android:id="@+id/wvFM"-->
+<!--            style="@style/MatchMatch" />-->
+
+    </LinearLayout>
+</layout>

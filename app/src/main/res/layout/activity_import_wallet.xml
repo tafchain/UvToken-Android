@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        style="@style/MatchMatch"
+        android:orientation="vertical"
+        android:id="@+id/layout_import_wallet"
+        tools:context=".ui.importWallet.ui.ImportWalletActivity">
+        <View
+            android:id="@+id/v"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+        <RelativeLayout style="@style/MatchWrap"
+            android:animateLayoutChanges="true"
+            >
+
+            <include
+                android:id="@+id/iTitle"
+                layout="@layout/common_title" />
+
+            <!--                TODO-->
+            <TextView
+                android:id="@+id/tvMnemonicSpelledCorrectly"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_80"
+                android:background="@color/color_14"
+                android:gravity="center"
+                android:text="@string/mnemonic_spell"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_14"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            style="@style/MatchWrap"
+            android:background="@color/color_18"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:text="@string/import_wallet_prompt"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12" />
+
+        <LinearLayout
+            style="@style/MatchWrap"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvMnemonicImport"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/dp_14"
+                android:text="@string/mnemonic_import"
+                android:textColor="@drawable/import_type_select"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tvPrivateKeyImport"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/dp_14"
+                android:text="@string/private_key_import"
+                android:textColor="@drawable/import_type_select"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/color_21"/>
+        <LinearLayout
+           android:orientation="horizontal"
+            style="@style/MatchWrap">
+            <View
+                android:id="@+id/v_1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/dp_2"
+                android:background="@color/color_7"/>
+            <View
+                android:id="@+id/v_2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:layout_height="@dimen/dp_2"
+                android:background="@color/color_7"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvPrompt"
+            style="@style/MatchWrap"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="@string/input_prompt"
+            android:textColor="@color/color_9"
+            android:textSize="@dimen/sp_14" />
+
+
+        <EditText
+            android:id="@+id/etMnemonic"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_220"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_20"
+            android:background="@drawable/confirm_mnemonic_bg_shape"
+            android:gravity="left|top"
+            android:padding="@dimen/dp_10" />
+        <!--    TODO 考虑做成RecyclerView-->
+        <include layout="@layout/common_select_coin_type" />
+
+        <Button
+            android:id="@+id/btnImport"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_30"
+            android:background="@drawable/common_btn_select"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="@string/import_confirm"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</layout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrap"
+    android:layout_marginLeft="@dimen/dp_20"
+    android:layout_marginRight="@dimen/dp_20"
+    android:layout_marginBottom="@dimen/dp_28"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tvReceiveOrTransfer"
+                style="@style/WrapWrap"
+                android:text="@string/receive"
+                android:textColor="@color/color_5"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tvPacking"
+                style="@style/WrapWrap"
+                android:text="@string/packing"
+                android:layout_toRightOf="@+id/tvReceiveOrTransfer"
+                android:textColor="@color/color_23"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_2"
+                android:textSize="@dimen/sp_10"
+                />
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/tvTxId"-->
+            <!--                style="@style/WrapWrap"-->
+            <!--                android:layout_toRightOf="@+id/tvReceiveOrTransfer"-->
+            <!--                android:text=""-->
+            <!--                android:textColor="@color/color_5"-->
+            <!--                android:textSize="@dimen/sp_14" />-->
+
+            <TextView
+                android:id="@+id/tvAddress"
+                style="@style/WrapWrap"
+                android:layout_below="@+id/tvReceiveOrTransfer"
+                android:layout_marginTop="@dimen/dp_2"
+                android:text=""
+                android:textColor="@color/color_10"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tvTransactionMoney"
+                style="@style/WrapWrap"
+                android:layout_alignParentRight="true"
+                android:text="0"
+                android:textColor="@color/color_5"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tvTime"
+                style="@style/WrapWrap"
+                android:layout_below="@+id/tvTransactionMoney"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/dp_2"
+                android:layout_toRightOf="@+id/tvAddress"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@color/color_10"
+                android:textSize="@dimen/sp_14" />
+
+            <LinearLayout
+                android:id="@+id/llCancelAndAccelerate"
+                style="@style/WrapWrap"
+                android:layout_below="@+id/tvTime"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/dp_4"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvCancel"
+                    style="@style/WrapWrap"
+                    android:background="@drawable/btn_cancel_2_bg"
+                    android:paddingLeft="@dimen/dp_16"
+                    android:paddingTop="@dimen/dp_4"
+                    android:paddingRight="@dimen/dp_16"
+                    android:paddingBottom="@dimen/dp_4"
+                    android:text="@string/cancel"
+                    android:textColor="@color/color_5"
+                    android:textSize="@dimen/sp_10" />
+
+                <TextView
+                    android:id="@+id/tvAccelerate"
+                    style="@style/WrapWrap"
+                    android:layout_marginLeft="@dimen/dp_6"
+                    android:background="@drawable/btn_accelerate_2_bg"
+                    android:paddingLeft="@dimen/dp_16"
+                    android:paddingTop="@dimen/dp_4"
+                    android:paddingRight="@dimen/dp_16"
+                    android:paddingBottom="@dimen/dp_4"
+                    android:text="@string/accelerate"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_10" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_6"
+            android:src="@mipmap/icon_ckgd" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_below="@+id/tvAddress"
+        android:layout_marginTop="@dimen/dp_14"
+        android:background="@color/color_21" />
+</LinearLayout>

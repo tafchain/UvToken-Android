@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	//tabbar
+	<string name="title_wallet">Wallet</string>
+	<string name="title_quotes">Market</string>
+	<string name="transaction">Trade</string>
+	<string name="financial_management">DApp</string>
+	<string name="swap">Trade</string>
+	<string name="title_mine">My</string>
+
+	//创建钱包
+	<string name="app_name">UvToken</string>
+	<string name="app_name_debug">UvToken-Debug</string>
+	<string name="multi_chain_wallet">Multi Chain Wallet</string>
+	<string name="support_public_chains">Support mainstream public chains such as BTC, Eth and TRX</string>
+	<string name="create_wallet">Create wallet</string>
+	<string name="not_have_wallet">No wallet, first use</string>
+	<string name="import_wallet">Import wallet</string>
+	<string name="have_wallet">Existing wallet, support mnemonics, private key and other ways to import</string>
+	<string name="wallet_name">Wallet name</string>
+	<string name="please_enter_a_name">Please enter  name</string>
+	<string name="pwd">Password</string>
+	<string name="please_enter_pwd">Please input password</string>
+	<string name="char1_20">1-20 characters</string>
+	<string name="pwd_prompt">At least 8 characters, including upper and lower case letters and numbers</string>
+	<string name="repeat_pwd">Repeat password</string>
+	<string name="please_enter_pwd_again">Please input the password again</string>
+	<string name="already_read">I have read and agree</string>
+	<string name="user_agreement">"《Terms of use》"</string>
+	<string name="terms_of_use">Terms of use</string>
+	<string name="create">Create</string>
+	<string name="add_currency">Add currency</string>
+	<string name="will_support_more_main_chain_currencies">Coming soon to support more main chain currencies</string>
+	<string name="creating_a_wallet_for_you">Creating wallet for you...</string>
+	<string name="password_input_is_inconsistent">The two passwords are inconsistent</string>
+	<string name="create_failed">Failed to create. Please try again</string>
+	<string name="press_again_to_exit">Press again to exit</string>
+	<string name="dydx_des">The world leading decentralized perpetuals exchange</string>
+	<string name="uniswap_des">Decentralized exchange</string>
+	<string name="financing">Financing</string>
+	<string name="dappAlertContent">Your use of the third party DApp will be governed by the user agreement and privacy policy of the third party DApp, and the third party DApp will be directly and solely responsible to you.</string>
+
+	//交易
+	<string name="sale">Pay</string>
+	<string name="swap_receive">Receive</string>
+
+	<string name="dapp_search">Search for DApp or input DApp url</string>
+
+	<string name="dapp_swap">Swap</string>
+	<string name="dapp_layer2">Layer2</string>
+	<string name="dapp_financing">Financing</string>
+	<string name="dapp_nft">NFT</string>
+	<string name="dapp_game">Game</string>
+	<string name="dapp_other">Other</string>
+	<string name="underpaid_miners">Underpaid miners</string>
+	<string name="not_sufficient_funds">not sufficient funds</string>
+	<string name="switch_wallet">switch Wallet</string>
+	<string name="eth_empty_tip">There is no ETH wallet in the local wallet, please create it and try again</string>
+	<string name="eth_select_tip">There is no ETH wallet in the local wallet, please select it and try again</string>
+
+	<string name="inch_rate">Rate</string>
+	<string name="inch_fee">Fee</string>
+	<string name="inch_pay_amount">Pay Amount</string>
+	<string name="inch_receive_amount">Receive Amount</string>
+	<string name="inch_estimate">Estimate</string>
+	<string name="inch_exchange_now">Exchange now</string>
+	<string name="trx_amount_tip">The amount cannot be zero</string>
+
+
+	//导入钱包
+	<string name="import_wallet_prompt">Wallet server does not save your mnemonics and other information.</string>
+	<string name="mnemonic_import">Mnemonic words import</string>
+	<string name="private_key_import">Private key import</string>
+	<string name="input_prompt">Please fill in your mnemonics and separate them with spaces</string>
+	<string name="import_confirm">Import</string>
+	<string name="select_chain">Please select the imported main chain wallet</string>
+	<string name="please_input_12_mnemonic">Please enter 12 mnemonic words!</string>
+	<string name="mnemonic_spell">Spelling error of current mnemonic word, please check</string>
+	<string name="please_input_private_key_address">Please fill in the private key address!</string>
+	"重复导入" = "Repeat import";
+	<string name="repeat_import_prompt">The wallet has already been imported and cannot be imported again</string>
+	<string name="re_import">Re import</string>
+	<string name="complete">Complete</string>
+	<string name="transaction_detail">Transaction Details</string>
+	<string name="receiving_address">Receiving Address</string>
+	<string name="miner_fee">miner Fee</string>
+	<string name="one_inch_des">Decentralized aggregated trading platform</string>
+	<string name="Memo">Memo</string>
+	<string name="exchange_detail">Exchange Detail</string>
+	<string name="inch_swap">Swap</string>
+	//榜单
+	<string name="market_value">Market Value</string>
+	<string name="watch_list">Watchlist</string>
+	<string name="change">Change</string>
+	<string name="trx_tip">About Fees\n
+Fees will be calculated according to the following:\n
+-remaining bandwidth points.
+-remaining TRX. Fees = transaction bytes *1Osun (1TRX=1000000sun). Fees are estimated according to regular trasactions. Please be aware that the actual fee is determined by Tron network.</string>
+
+
+
+	//导入指定种类钱包私钥地址
+	<string name="import_btc_title">Import BTC wallet</string>
+	<string name="import_eth_title">Import ETH wallet</string>
+	<string name="import_aeco_title">Import AECO wallet</string>
+	<string name="import_trx_title">Import TRX wallet</string>
+
+	<string name="import_taft_title">Import TAFT wallet</string>
+	<string name="input_btc_private_key_address">Please fill in the private key address of your BTC Main Chain Wallet</string>
+	<string name="input_eth_private_key_address">Please fill in the private key address of your ETH Main Chain Wallet</string>
+	<string name="input_taft_private_key_address">Please fill in the private key address of your TAFT Main Chain Wallet</string>
+	<string name="input_trx_private_key_address">Please fill in the private key address of your TRX Main Chain Wallet</string>
+	<string name="input_aeco_private_key_address">Please fill in the private key address of your AECO Main Chain Wallet</string>
+	<string name="private_key_wrong">Please enter the correct private key address</string>
+	<string name="import_success">Imported successfully</string>
+	<string name="is_importing">Importing...</string>
+	<string name="had_import">Already exists. Please do not import it again</string>
+
+	//创建钱包提醒
+	<string name="already_create_wallet">A decentralized wallet has been created for you</string>
+	<string name="prompt">Tips</string>
+	<string name="prompt_content">Mnemonics are equal to all the control rights of the whole wallet, please keep them properly. If the mnemonics are lost, they will not be retrieved. Please make sure to back them up</string>
+	<string name="backup_immediately">Backup now</string>
+	<string name="backup_later">Back up later</string>
+
+	//备份助记词
+	<string name="mnemonic_backup_title">Backup mnemonics</string>
+	<string name="the_mnemonic_sequence_is_wrong">Help note word order, please check carefully</string>
+	<string name="prompt1">1. Do not take screen capture, share and other operations in the case of networking, in order to prevent property losses caused by third-party malware collection
+	2. The wallet server does not save your mnemonics and other information, please make a full backup </string>
+<!--	<string name="prompt2">2, the wallet server does not save your help and other information, please make a complete backup</string>-->
+	<string name="understood">I know</string>
+	<string name="backup_prompt3">Please copy some mnemonics in order in a safe environment and keep them properly</string>
+	<string name="backup_completed">Completed backup</string>
+	<string name="prompt0">Do not take screen capture, share and other operations in the case of networking, in order to prevent property losses caused by third-party malware collection</string>
+
+	//确认助记词
+	<string name="confirm_mnemonic_title">Confirmation mnemonics</string>
+	<string name="confirm_mnemonic">Please click the mnemonics in order to confirm the correctness of your backup</string>
+
+	//切换语言
+	<string name="language_switch">Language Switch</string>
+	<string name="language_switch_success">Language switch successfully!</string>
+
+	//我的
+	<string name="address_book">Address Book</string>
+	<string name="language_switch1">Language Switch</string>
+	<string name="currency_unit">Currency Unit</string>
+	<string name="transfer_pwd">Transaction Password</string>
+	<string name="about_us">About Us</string>
+	<string name="no_data">No data available</string>
+	<string name="new_address">New address</string>
+	<string name="save">Save</string>
+	<string name="type">Type</string>
+	<string name="name">Name</string>
+	<string name="address">Address</string>
+	<string name="description">Describe</string>
+	<string name="not_required">Not required</string>
+	<string name="delete">Delete</string>
+	<string name="success_delete">Successfully deleted</string>
+	<string name="save_success">Saved successfully</string>
+	<string name="modified_success">Modified successfully</string>
+	<string name="input_pwd_dialog_title">Input password</string>
+	<string name="currency_unit_switch_successfully">Currency unit switch successfully!</string>
+	<string name="new_version_update">Version update</string>
+	<string name="current_version">Current version</string>
+	<string name="already_the_latest_version">It is the latest version</string>
+	<string name="edit_address">Edit address</string>
+    <string name="modified_failed">Modified Failed!</string>
+	//全局
+	<string name="please_check_the_network">Please check the network</string>
+	<string name="loading_failed">Loading failed</string>
+	<string name="try_again">Try again?</string>
+	<string name="try_a">Try again</string>
+	<string name="please_try_again">Please try again</string>
+	<string name="ok_0">determine</string>
+	<string name="cancel_0">cancel</string>
+	<string name="update">update immediately</string>
+
+
+	//首页钱包
+	<string name="total_assets">Total assets</string>
+	<string name="safety_warning">Safety reminder</string>
+	<string name="backup_safe_reminder1">your wallet has not been backed up. If you forget your password, delete your app or lose your mobile phone, your assets will be lost. Please back up your wallet immediately!</string>
+	<string name="backup_now">Backup now</string>
+	<string name="assets">Asset</string>
+	<string name="record">Record</string>
+
+
+	//搜索币种
+	<string name="please_enter_coin_name">Please enter a coin name</string>
+<!--	<string name="ERC20_coin">Only<font color='#fff0ba62'> ERC20 </font>token is supported at present</string>-->
+	<string name="ERC20_coin">Only ERC20 token is supported at present</string>
+	<string name="popular_coins">Popular currency</string>
+	<string name="adding">Adding...</string>
+	<string name="added_successfully">Added successfully</string>
+	<string name="add_failed">Add failed</string>
+	<string name="deleting">Deleting...</string>
+	<string name="add_coin">Add main chain</string>
+	<string name="successfully_deleted">Successfully deleted</string>
+
+
+	//钱包管理
+	<string name="wallet_manage">Wallet management</string>
+	<string name="modify_wallet_pwd">Change password</string>
+	<string name="backup_private_key">Backup private key</string>
+	<string name="delete_wallet">Delete Wallet</string>
+	<string name="Tips">Tips</string>
+	<string name="can_not_delete">You are using the current wallet, delete it after switching</string>
+	<string name="enter_wallet_password">Enter Wallet Password</string>
+	<string name="wrong_password">Wrong password</string>
+	<string name="private_key">Private key</string>
+	<string name="manager">Manage</string>
+	<string name="confirm_the_changes">Confirm modification</string>
+	<string name="original_password">Original password</string>
+	<string name="please_enter_original_password">Please enter the original password</string>
+	<string name="changing">Changing...</string>
+	<string name="account_management">Account management</string>
+	<string name="wallet_address">Wallet address</string>
+
+
+	//扫描
+	<string name="copy_success">Copy succeeded</string>
+	<string name="scan_result">Scan results</string>
+	<string name="scan">Scan</string>
+	<string name="photo_album">Album</string>
+	<string name="processing">Processing...</string>
+	<string name="no_qr">No QR code / barcode found</string>
+	<string name="scan_prompt">Put the two-dimensional code / bar code into the box, and it can be scanned automatically</string>
+	<string name="copy">copy</string>
+
+	//收款、转账
+	<string name="share_it">Share</string>
+	<string name="address_qr_code">Address QR Code</string>
+	<string name="receive_address">Receive Address</string>
+	<string name="receive_address1">To</string>
+	<string name="backup_safe_reminder">Your wallet has not been backed up. If you forget your password, delete the application or lose your phone, your assets will be lost. Please back up your wallet immediately!</string>
+	<string name="transfer_address">Transfer address</string>
+	<string name="all">All</string>
+	<string name="memo">Memo</string>
+	<string name="absenteeism">Miner fee</string>
+	<string name="slower">Slower</string>
+	<string name="recommend">Recommend</string>
+	<string name="fast">Fast</string>
+	<string name="forecast">Forecast</string>
+	<string name="minutes">Minutes</string>
+	<string name="customize">Custom</string>
+	<string name="commit">Submit</string>
+	<string name="transfer_amount">Transfer amount</string>
+	<string name="receive">Received</string>
+	<string name="transfer">Transfer</string>
+
+	<string name="rate">Rate</string>
+	<string name="waiting_for_confirmation">Confirming</string>
+	<string name="submitted_seccessfully">Submitted successfully</string>
+
+    <string name="failed_ti_submit">Failed to submit</string>
+    <string name="submitting">Submitting...</string>
+    <string name="receive_qr">Receive Code</string>
+
+	<string name="mining_rewards">Mining rewards</string>
+<!--	<string name="no_details_and_copy_hash">No details yet, transaction hash has been copied</string>-->
+
+
+	//交易
+	<string name="no_net">Loading failed, please try again (network permission: please open network permission for TAF Wallet in system settings)</string>
+	<string name="recent_transactions">Recent Transactions</string>
+	<string name="statement">Statement</string>
+	<string name="statement_content">The page you visit will jump to the third party DAPP. The third party user agreement and privacy agreement will apply to your use of the third party DAPP, and they will bear the responsibility to you directly and separately.</string>
+	<string name="title_permission">request for access</string>
+	<string name="permission_rationale_camera_message">You have rejected camera permissions, you need to turn on camera permissions to identify QR code</string>
+	<string name="permission_rationale_storage_message">You have rejected read and write album permissions, you need to read and write album privileges to identify QR code</string>
+	<string name="next">Next step</string>
+	<string name="please_input">Address information is not completed</string>
+	<string name="arther_main_chain">Arthur main chain</string>
+	<string name="wallet_list">Wallet list</string>
+	<string name="got_it">Got it</string>
+	<string name="only_support_arthur">The current DApp only support Arthur main chain</string>
+	<string name="select_wallet">Select wallet</string>
+
+	<string name="hour_fee">
+预计60分钟</string>
+	<string name="half_hour_fee">
+预计30分钟</string>
+	<string name="fastest_fee">
+预计10分钟</string>
+    <string name="server_error102604">the amount of transfer should be more than zero</string>
+    <string name="server_error102606">invalid transfer account, can not be yourself</string>
+
+    <string name="new_name">New name</string>
+    <string name="please_enter_a_new_name">Please enter a new name</string>
+    <string name="modify_wallet_name">Modify wallet name</string>
+    <string name="please_log_in_first">please log in first</string>
+	<string name="successful">Success</string>
+	<string name="failed">Failed</string>
+	<string name="amount">Amount</string>
+<!--	<string name="payment_address">Payment address</string>-->
+	<string name="payment_address">From</string>
+<!--	<string name="transaction_hash">Transaction number</string>-->
+	<string name="transaction_hash">TxID</string>
+	<string name="query_details">Query details</string>
+	<string name="details">Details</string>
+	<string name="this_transaction_hash_has_been_copied">This transaction hash has been copied</string>
+	<string name="sign_out">sign out</string>
+	<string name="no_details">No details</string>
+	<string name="receiving_address_same_as_transfer_address">When the collection address is the same as the transfer address, transfer transaction is not allowed in UvToken</string>
+	<string name="device_is_offling">Device is offline</string>
+	<string name="please_check_network">The network is disconnected, please check the network link.</string>
+	<string name="off_line">Offline</string>
+	<string name="miner_fee_rate_is_too_high">Gas Fee Rate too high will waste the gas fee</string>
+	<string name="miner_fee_rate_is_too_low">Gas Fee Rate too low will affect the transaction confirming time</string>
+	<string name="insufficient_current_balance">Insufficient current balance</string>
+	<string name="balance_is_not_enough">The main currency balance is not enough to pay the miners fees</string>
+	<string name="fee_rate_cannot_be_lower_than_1">Miner fees cannot be lower than 0.00000266BTC</string>
+	<string name="you_hava_an_unconfirmed_transaction">You have an unconfirmed transaction</string>
+	<string name="address_illegal">The address you entered is illegal</string>
+	<string name="invalid_address">Invalid address</string>
+	<string name="decentralized_financial_management">Decentralized financial management</string>
+	<string name="prompt_content2">The page you visit will be redirected to a third-party platform. Your use of the third-party platform must agree to the third-party platform’s "User Agreement" and other privacy policies and other rules, and the third-party platform is solely responsible to you</string>
+	<string name="agree2">agree</string>
+	<string name="loan_and_financial_management">Loan financing, supporting 17 currencies</string>
+	<string name="deposit_coins_to_earn_interest">Deposit currency to generate interest, support USDT/USDC/DAI</string>
+	<string name="crv_mining_claim_vote">CRV mining, claiming and voting</string>
+	<string name="stable_currency_generates_interest">Stable currency yields interest, stable currency balance treasure</string>
+
+	<string name="signature">signature</string>
+	<string name="news_info">news</string>
+
+	<string name="add_optional">Add</string>
+	<string name="currency_market_value">Market Value（￥）</string>
+	<string name="has_no_create_eth">Please select the ETH wallet and try again</string>
+	<string name="disconnect_dapp">You have disconnected the Dapp</string>
+	<string name="cancel_select">Cancel</string>
+	<string name="has_cancel">Has been cancelled</string>
+	<string name="has_add">Successfully added</string>
+	<string name="latest_price">Price（￥）</string>
+	<string name="ups_and_downs_24H">24H Change</string>
+	<string name="billion">Billion</string>
+	<string name="enter_token_name">Input Token Name</string>
+	<string name="accelerate">Accelerate</string>
+	<string name="transaction_completed">Transaction completed, cannot accelerate</string>
+	<string name="transaction_completed_cannot_be_cancelled">Transaction completed, cannot be cancelled</string>
+	<string name="packing">Packing</string>
+	<string name="transaction_acceleration">Trade acceleration</string>
+	<string name="cancel_the_deal">cancel the deal</string>
+	<string name="payment_information">Payment Information</string>
+	<string name="speed_up_transactions">Speed up trading</string>
+	<string name="recommended">Avg(about 3min)</string>
+<!--	<string name="haste">Fast(about 1 minute)</string>-->
+	<string name="haste">Rapid(about 15s)</string>
+	<string name="before_acceleration">Before acceleration</string>
+	<string name="after_acceleration">After acceleration</string>
+	<string name="confirm_acceleration">Confirm acceleration</string>
+	<string name="dapp_not_found">Dapp Not Found</string>
+	<!--TODO TAF-->
+	<string name="title_home">Home</string>
+	<string name="title_booking">Pre-sale</string>
+	<string name="title_my">My</string>
+	<string name="title_found">Discover</string>
+
+	<string name="switch_language">Language</string>
+
+	<string name="click_no_response">Invalid click</string>
+	<string name="select_country_or_area">Select country / Region</string>
+	<string name="loading">loading</string>
+	<string name="inn_correct_email">Please enter the correct email address</string>
+	<string name="please_select_user_agreement">Please check user agreement</string>
+	<string name="click_login">Click login</string>
+	<string name="welcome_taf">Welcome to TAF chain</string>
+	<string name="my_id_auth">Authentication</string>
+	<!--    <string name="my_id_auth">Identity Authentication</string>-->
+	<string name="my_booking">My pre-sale</string>
+	<string name="my_promotion">My promotion</string>
+	<string name="setting">Settings</string>
+	<string name="account">Account</string>
+	<string name="language">Language</string>
+	<string name="change_psw">Change Password</string>
+	<string name="log_out">Log out</string>
+	<string name="certified">Certified</string>
+	<string name="not_auth">Not certified</string>
+	<string name="in_the_review">Under review</string>
+	<string name="has_refused">Rejected</string>
+	<string name="kyc_status_unknown">Unknown</string>
+	<string name="please_login">Please complete the login first</string>
+	<string name="about_us_str" >About  us</string>
+	<string name="version">Version</string>
+	<string name="not_new_version">The current version is the latest version</string>
+	<string name="subscriptions">Subscription fund</string>
+	<string name="purchase_credits">Subscription amount</string>
+	<!--    <string name="purchase_credits_unit">Subscription quota</string>-->
+	<string name="no_apply_record">There is no application record for the time being</string>
+
+	<string name="promote_user">Promote users</string>
+	<string name="cumulative_rebate">Accumulated rebate</string>
+	<!--    <string name="cumulative_rebate_unit">Accumulated rebate</string>-->
+	<string name="promote_links">Promotion link</string>
+	<string name="promotion_code">Promotion code</string>
+	<string name="no_search_data_str">No records can be found for the time being</string>
+	<string name="time">Time</string>
+	<string name="invited_user">Invite users</string>
+	<string name="the_rebate_amount">Rebate amount</string>
+	<string name="user">User</string>
+	<string name="level">Level</string>
+	<!--	<string name="phase">stage</string>-->
+	<string name="phase">Phase</string>
+	<string name="the_start">First round</string>
+	<string name="first_round">First round</string>
+	<string name="apply_money">Subscription amount</string>
+	<string name="id_auth">Authentication</string>
+	<string name="search">Search</string>
+	<string name="please_upload_id_photo">Please upload ID photo</string>
+	<string name="upload_id_photo_tips1">The photo information of the ID is clearly visible, no modification or obstruction is allowed</string>
+	<string name="upload_id_photo_tips2">Support JPG, PNG format, file less than 2 m;</string>
+	<string name="positive">Front</string>
+	<string name="the_reverse">Back</string>
+	<string name="country_or_area">Country / Region</string>
+	<string name="last_name">Last name</string>
+	<string name="first_name">First name</string>
+	<!--	<string name="document_type">type of certificate</string>-->
+	<string name="document_type">ID Type</string>
+	<string name="identity_number">ID Number</string>
+	<!--	<string name="identity_number">Document number</string>-->
+	<string name="birthday">Birthday</string>
+	<string name="phone_number">Tel Number</string>
+	<!--	<string name="phone_number">mobile phone number</string>-->
+	<string name="in_the_review_des">Please wait patiently,we will review the application as soon as we receive it.</string>
+	<!--	\ n-->
+	<string name="audit_failure_des">Your identity verification failed</string>
+	<string name="kyc_result">Certification results</string>
+	<string name="up_loading">uploading</string>
+	<string name="please_login_dialog_content">Only login users can participate in pre-sale</string>
+	<string name="need_kyc_certification">KYC certification is required to apply for purchase</string>
+	<string name="kyc_certification_is_review">KYC certification is under review, please try again later.</string>
+	<string name="refused">KYC certification has been rejected, please re certification</string>
+	<string name="target_amount_total">Target amount:</string>
+	<string name="persale_stage1">First round pre-sale [first stage]</string>
+	<string name="persale_stage2">First round pre-sale [Phase 2]</string>
+	<string name="persale_stage3">First round pre-sale [Phase 3]</string>
+	<string name="total_num">Total</string>
+	<string name="unit">copies</string>
+	<string name="minimum_limit">The minimum purchase limit is 1 copy</string>
+	<string name="please_check_agreement">Please check the subscription agreement</string>
+	<string name="activity_not_Started">The event has not started yet</string>
+	<string name="activity_finished">The event is over</string>
+	<string name="left_amount">Remaining copies</string>
+	<string name="unit_price">Price</string>
+	<string name="snapping_up_copies">Number of copies</string>
+	<string name="pay_money">Payable</string>
+	<!--	<string name="purchase_agreement">"Subscription Agreement"</string>-->
+	<string name="purchase_agreement">【Agreement】</string>
+	<string name="pay">Pay</string>
+	<string name="pay_tips">Please transfer funds to the above receiving address through a digital currency exchange or digital currency wallet. After receiving the account, the official review will automatically complete the purchase.</string>
+	<string name="copy_success1">Copy successfully</string>
+	<string name="payments">Payment amount</string>
+	<string name="collection_address">Receiving address QR code</string>
+	<string name="your_pay_link">Your independent USDT payment address (Omni)</string>
+	<string name="payed_back">Complete payment back</string>
+	<string name="cancel">Cancel</string>
+	<!--	<string name="sure">determine</string>-->
+	<string name="sure">OK</string>
+	<string name="news">News announcement</string>
+	<string name="look_more">More</string>
+	<string name="white_paper">White paper</string>
+	<string name="help_manual">Help manual</string>
+	<string name="update_title">new version update V</string>
+	<!--    <string name="version_v">V.</string>-->
+	<!--    <string name="USDT_unit">USDT</string>-->
+	<string name="re_login_alert">Login failed. Please login again</string>
+	<string name="retry_alert">Request failed, please try again</string>
+	<string name="server_error">The server reported an error, please visit again later</string>
+	<string name="time_out">Access server timeout, please check the network</string>
+	<string name="connect_error">Network link failed, please check the network</string>
+	<string name="upload_success_str">Upload successful, please wait</string>
+	<string name="net_lost">Network loss</string>
+	<string name="check_network">Please check the network</string>
+	<string name="load_failed">Loading failed</string>
+	<string name="if_retry_again">Do you want to try again?</string>
+	<string name="retry_again">Retry</string>
+	<string name="please_retry">Please try again</string>
+	<string name="login_success">Login successful</string>
+	<string name="s_to_resend">seconds</string>
+	<!--    <string name="s_to_resend">seconds later</string>-->
+	<string name="get_email_code">Resend</string>
+	<string name="get_code">Send</string>
+	<!--	<string name="get_code">get verification code</string>-->
+	<string name="load_all_alert">All data loaded</string>
+	<string name="confirm_logout">Sign out?</string>
+	<string name="already_register_email">This email has been registered, please login directly</string>
+	<string name="please_input_email">Please enter email address</string>
+	<string name="please_input_password">Please input a password</string>
+	<string name="please_input_password_again">Please enter the password again</string>
+	<string name="email_not_registered">This email is not registered, please register directly</string>
+	<string name="pwd_is_different">The two passwords are inconsistent</string>
+	<string name="pwd_tips">Please input 8-30 letters and numbers</string>
+	<string name="modify_success">Reset successful</string>
+	<string name="reset_pwd">Reset Password</string>
+	<string name="input_email_code">Please enter email verification code</string>
+	<!--    <string name="input_email_code">Please enter the mailbox verification code</string>-->
+	<string name="please_input_new_password">Please enter a new password</string>
+	<string name="please_input_new_password_again">Please enter the new password again</string>
+	<string name="retrieve_pwd">Retrieve password</string>
+	<string name="register">Register</string>
+	<string name="had_taf_account">Already have a TAF chain account?</string>
+	<string name="login">Sign in</string>
+	<string name="set_pwd">Set password</string>
+	<string name="password_tips">At least 8 characters, must contain letters and numbers.</string>
+	<string name="referees_id">Recommender ID (optional)</string>
+	<string name="input_referees_id">Please enter the recommender ID</string>
+	<string name="agree">I have read and agree</string>
+	<string name="email_verification">Mailbox verification</string>
+	<string name="check_email_alert">If you do not receive email, please check your email for spam.</string>
+	<string name="forget_pwd">Forget the password?</string>
+	<string name="not_taf_account">No TAF Chain account yet?</string>
+
+	<string name="network_request_failed">Network request failed</string>
+	<string name="server_error100101">invalid parameter</string>
+	<string name="server_error100104">invalid syntax for email</string>
+	<string name="server_error100111">invalid verification code</string>
+	<string name="server_error100112">verification code expired</string>
+	<string name="server_error100113">invalid verification code</string>
+	<string name="server_error100115">invalid Invitation code</string>
+	<string name="server_error100116">the email is already registered</string>
+	<string name="server_error100201">invalid parameter</string>
+	<string name="server_error100202">invalid username or password</string>
+	<string name="server_error100203">login failed</string>
+	<string name="server_error101503">reset password failed</string>
+	<string name="server_error101504">new password should be different for the previous</string>
+	<string name="server_error101505">invalid verification code</string>
+	<string name="server_error101506">verification code expired</string>
+	<string name="server_error101701">invalid parameter</string>
+	<string name="server_error101702">get verification code failed</string>
+	<string name="server_error101703">Sending frequency exceeds limit</string>
+	<string name="server_error101704">the email is already registered</string>
+	<string name="server_error102002">sold out</string>
+	<string name="server_error102003">get address failed</string>
+	<string name="server_error102101">invalid id type</string>
+	<string name="server_error102102">invalid parameter</string>
+	<string name="server_error102103">invalid parameter</string>
+	<string name="server_error102104">invalid parameter</string>
+	<string name="server_error102105">upload front photo of id failed</string>
+	<string name="server_error102106">upload back photo of id failed</string>
+	<string name="server_error102601">invalid parameter</string>
+	<string name="server_error102602">transfer failed</string>
+	<string name="server_error102603">user does not exist</string>
+
+    <string name="server_error102605">insufficient balance</string>
+	<string name="server_error102607">the receiver should be KYC first</string>
+	<string name="server_error102801">invalid parameter</string>
+	<string name="server_error102802">get verification code failed</string>
+	<string name="server_error102803">get verification code too frequently</string>
+	<string name="server_error103001">authorisation code expired</string>
+	<string name="server_error102903">invalid username or password</string>
+
+	<!--    <string name="unit_price_taft">1 copy = 20,000 TAFT</string>-->
+	<string name="purchase_agreement_title">Subscription agreement</string>
+	<string name="buy_num_not_greater_than_the_remaining">The purchase share cannot be greater than the remaining share</string>
+	<string name="select_from_album">Select from albums</string>
+	<string name="take_photo">Take pictures</string>
+	<string name="audit_failure">Rejected</string>
+	<!--	<string name="audit_failure">Audit failure</string>-->
+	<string name="please_select_your_country">Please select your country</string>
+	<string name="input_first_name">Please enter your last name</string>
+	<string name="input_last_name">Please enter your name</string>
+	<string name="please_input_your_document_type">Please select your ID type</string>
+	<string name="please_input_your_identity_number">Please enter the document number</string>
+	<string name="please_input_your_birthday">Please select the date of birth</string>
+	<string name="please_input_your_phone_number">Please enter the phone number</string>
+	<string name="id_card">ID card</string>
+	<string name="passport">passport</string>
+	<string name="driver_license">driver license</string>
+	<string name="account_does_not_exist">Account does not exist</string>
+	<string name="is_not_contain_number">No numbers</string>
+	<string name="is_not_contain_letter">No letters</string>
+	<string name="at_least_8_chars">At least 8 characters</string>
+	<string name="inviter_not_exist">Recommended people ID does not exist</string>
+	<string name="user_agreement1">User Agreement</string>
+	<string name="update_now">update immediately</string>
+	<string name="downloading">downloading…</string>
+	<string name="upload_success">Upload success</string>
+	<string name="to_fill_in">Reset</string>
+	<string name="invite_friends">invite friends</string>
+	<!--    <string name="chinese">中文</string>-->
+	<!--	<string name="chinese">Chinese</string>-->
+	<!--    <string name="en_english">English</string>-->
+	<string name="change_password">change Password</string>
+	<string name="news_detail">News details</string>
+	<!--    <string name="taft_unit">TAFT</string>-->
+	<string name="purchase_amount">Subscription amount</string>
+	<!--    <string name="level_en">Lv</string>-->
+	<string name="login_out_tips">Sign out?</string>
+	<!--	<string name="login_out_tips">Do you determine how to log out?</string>-->
+	<string name="switch_language_success">Language switch successfully</string>
+	<string name="clear_cache">Clear cache</string>
+	<string name="cleaning_up">Cleaning up</string>
+	<string name="clean_up_completed">Clean up completed</string>
+	<string name="fill_in_again">Fill in again</string>
+	<string name="sold_out">Sold out</string>
+	<string name="is_switch_language">Do you sure you want to switch your language?</string>
+
+	<string name="unknown_exception">request failed</string>
+	<string name="unknown_host_exception">Network is not available, please contact us!</string>
+	<string name="socket_timeout_exception">Request a network timeout, please contact us!</string>
+	<string name="http_exception500_599">Server processing request error</string>
+	<string name="invalid_token_401">Login invalid, please log in!</string>
+	<string name="server_exception400_499">Server unable to process requests</string>
+	<string name="server_exception300_399">Request to be redirected to other pages</string>
+	<string name="parse_exception">Data analysis error</string>
+	<string name="cannot_less_or_equal_0">The buying share cannot be less than or equal to 0</string>
+	<!--    <string name="abnormal_network_please_try_again">Network is abnormal, please contact us!</string>-->
+
+	<string name="transfer_record">Record</string>
+	<string name="current_quota">Current quota</string>
+	<string name="quota">Quota</string>
+	<string name="transfer_out">Transfer out quota</string>
+	<string name="pwd_confirm">Password</string>
+	<string name="transfer1">Transfer</string>
+	<string name="input_email">Please enter  email</string>
+	<string name="input_transfer_amount">Please enter the transfer amount</string>
+	<string name="please_input_pwd">Please enter  password</string>
+	<string name="transfer_prompt">Transfer amount cannot be less than 1 TAFT</string>
+	<string name="transfer_successful">The transfer was successful!</string>
+	<string name="transfer_amount1">Transfer amount</string>
+	<string name="transfer_record_title">Transfer record</string>
+	<string name="transfer_auth_verify">Authentication</string>
+
+
+
+
+</resources>

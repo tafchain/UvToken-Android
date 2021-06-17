@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        style="@style/MatchMatch"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:context=".ui.receiveAndTransfer.receive.ui.ReceiveActivity">
+
+        <include
+            android:id="@+id/iTitle"
+            layout="@layout/common_title" />
+
+        <LinearLayout
+            style="@style/MatchMatch"
+            android:background="@drawable/receive_shape"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                style="@style/MatchWrap"
+                android:layout_margin="@dimen/dp_30"
+                android:background="@drawable/qr_bg"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_34"
+                    android:text="@string/address_qr_code"
+                    android:textColor="@color/color_5"
+                    android:textSize="@dimen/sp_14" />
+
+                <ImageView
+                    android:id="@+id/ivQrCode"
+                    android:layout_width="@dimen/dp_120"
+                    android:layout_height="@dimen/dp_120"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:layout_marginBottom="@dimen/dp_30" />
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_18"
+                    android:layout_marginRight="@dimen/dp_18"
+                    android:src="@mipmap/pic_lin" />
+
+                <LinearLayout
+                    style="@style/MatchWrap"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:layout_marginLeft="@dimen/dp_30"
+                    android:layout_marginRight="@dimen/dp_30"
+                    android:orientation="vertical">
+                    <!--                android:background="@drawable/receive_address_bg_shape"-->
+                    <TextView
+                        style="@style/WrapWrap"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:text="@string/receive_address"
+                        android:textColor="@color/color_5"
+                        android:textSize="@dimen/sp_12" />
+
+                    <TextView
+                        android:id="@+id/tvReceiveAddress"
+                        style="@style/WrapWrap"
+                        android:layout_marginTop="@dimen/dp_6"
+                        android:text=""
+                        android:textColor="@color/color_9"
+                        android:textSize="@dimen/sp_12" />
+
+
+                    <TextView
+                        android:id="@+id/tvCopy"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_44"
+                        android:layout_marginLeft="@dimen/dp_60"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:layout_marginRight="@dimen/dp_60"
+                        android:background="@drawable/rv_import_wallet_footer_shape"
+                        android:enabled="true"
+                        android:gravity="center"
+                        android:text="@string/copy"
+                        android:textAllCaps="false"
+                        android:textColor="@color/color_12"
+                        android:layout_marginBottom="@dimen/dp_28"
+                        android:textSize="@dimen/sp_14" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

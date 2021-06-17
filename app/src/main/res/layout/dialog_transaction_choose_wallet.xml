@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrap"
+    android:layout_gravity="center"
+    android:background="@drawable/common_prompt_dialog_bg"
+    android:orientation="vertical">
+
+
+    <TextView
+        style="@style/WrapWrap"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/only_support_arthur"
+        android:textColor="#1D223B"
+        android:textSize="@dimen/sp_18"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="54dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="63dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="44dp"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:background="@drawable/rv_import_wallet_footer_shape"
+            android:textColor="@color/color_12"
+
+            android:text="@string/cancel"/>
+
+        <TextView
+            android:id="@+id/tv_ok"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="44dp"
+            android:textSize="14sp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/rv_create_wallet_footer_shape"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="@string/select_wallet"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

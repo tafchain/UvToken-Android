@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llTitle"
+    style="@style/MatchWrap"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            style="@style/WrapWrap"
+            android:padding="@dimen/dp_12"
+            android:src="@mipmap/icon_back" />
+
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/WrapWrap"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:layout_marginRight="@dimen/dp_40"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/color_5"
+            android:textSize="@dimen/sp_18" />
+<!--        @string/mnemonic_backup_title-->
+
+        <ImageView
+            android:id="@+id/ivRightIcon"
+            style="@style/WrapWrap"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/dp_12"
+            android:src="@mipmap/icon_back"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvRight"
+            style="@style/WrapWrap"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/dp_12"
+            android:text="@string/share_it"
+            android:textColor="@color/color_5"
+            android:visibility="gone"
+            android:textSize="@dimen/sp_16" />
+    </RelativeLayout>
+
+
+</LinearLayout>

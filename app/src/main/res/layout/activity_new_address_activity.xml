@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.receiveAndTransfer.transfer.ui.NewAddressActivity">
+
+        <include
+            android:id="@+id/iTitle"
+            layout="@layout/common_title" />
+
+        <TextView
+            style="@style/WrapWrap"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="@string/type"
+            android:textColor="@color/color_5"
+            android:textSize="@dimen/sp_14" />
+
+        <RelativeLayout
+            android:id="@+id/rlType"
+            style="@style/MatchWrap"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_6">
+
+            <ImageView
+                android:id="@+id/ivCurrency"
+                android:layout_width="@dimen/dp_18"
+                android:layout_height="@dimen/dp_18"
+                android:src="@mipmap/icon_btc_18" />
+
+            <TextView
+                android:id="@+id/tvCurrencyName"
+                style="@style/WrapWrap"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_toRightOf="@+id/ivCurrency"
+                android:text="BTC"
+                android:textColor="@color/color_5"
+                android:textSize="@dimen/sp_14" />
+
+            <ImageView
+                android:id="@+id/ivMore"
+                style="@style/WrapWrap"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/icon_more_off_hui" />
+        </RelativeLayout>
+
+        <include layout="@layout/common_line1" />
+
+
+        <LinearLayout
+            style="@style/MatchWrap"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/WrapWrap"
+                android:text="@string/name"
+                android:textColor="@color/color_5"
+                android:textSize="@dimen/sp_14" />
+
+            <EditText
+                android:id="@+id/etAddressName"
+                style="@style/MatchWrap"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14"
+                android:singleLine="true"
+                android:theme="@style/EditTextLineColor" />
+            <!--            android:hint="@string/please_enter_pwd"-->
+            <!--            android:inputType="textPassword"-->
+            <!--            android:textColorHint="@color/color_10"-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/MatchWrap"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/WrapWrap"
+                android:text="@string/address"
+                android:textColor="@color/color_5"
+                android:textSize="@dimen/sp_14" />
+
+            <EditText
+                android:id="@+id/etCurrencyAddress"
+                style="@style/MatchWrap"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14"
+                android:singleLine="true"
+                android:theme="@style/EditTextLineColor" />
+            <!--            android:hint="@string/please_enter_pwd"-->
+            <!--            android:inputType="textPassword"-->
+            <!--            android:textColorHint="@color/color_10"-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/MatchWrap"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/WrapWrap"
+                android:text="@string/description"
+                android:textColor="@color/color_5"
+                android:textSize="@dimen/sp_14" />
+
+            <EditText
+                android:id="@+id/etDescription"
+                style="@style/MatchWrap"
+                android:hint="@string/not_required"
+                android:textColor="@color/black"
+                android:textColorHint="@color/color_10"
+                android:singleLine="true"
+                android:textSize="@dimen/sp_14"
+                android:theme="@style/EditTextLineColor" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_30"
+            android:background="@drawable/common_btn_select"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="@string/save"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14" />
+
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrap"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/dp_20"
+    android:paddingTop="@dimen/dp_10"
+    android:paddingRight="@dimen/dp_20">
+    <TextView
+        android:id="@+id/tvIncreaseLiquidity"
+        style="@style/WrapWrap"
+        android:text=""
+        android:layout_marginRight="@dimen/dp_20"
+        android:textColor="@color/color_5"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:id="@+id/tvAmount"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/color_5"
+        android:textSize="@dimen/sp_14"
+        android:layout_marginRight="@dimen/dp_20"
+        />
+
+    <ImageView
+        android:id="@+id/ivStatus"
+        style="@style/WrapWrap"
+        android:src="@mipmap/increase_liquidity"/>
+
+</LinearLayout>

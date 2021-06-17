@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"  android:orientation="vertical"
+        tools:context=".ui.manageWallet.ui.ChangeWalletNameActivity">
+
+            <include
+                android:id="@+id/iTitle"
+                layout="@layout/common_title" />
+
+            <TextView
+                android:id="@+id/tvNewName"
+                style="@style/WrapWrap"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20"
+                android:text="@string/new_name"
+                android:textColor="@color/color_5"
+                android:textSize="@dimen/sp_18" />
+
+            <RelativeLayout
+                android:id="@+id/rlNewName"
+                style="@style/MatchWrap"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_20">
+
+                <EditText
+                    android:id="@+id/etNewName"
+                    style="@style/MatchWrap"
+                    android:hint="@string/please_enter_a_new_name"
+                    android:singleLine="true"
+                    android:maxLength="20"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/color_10"
+                    android:textSize="@dimen/sp_14"
+                    android:theme="@style/EditTextLineColor" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btnConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_44"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_30"
+                android:background="@drawable/common_btn_select"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="@string/confirm_the_changes"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+    </LinearLayout>
+</layout>

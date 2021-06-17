@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrap"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/dp_20"
+    android:paddingTop="@dimen/dp_10"
+    android:paddingRight="@dimen/dp_20"
+    android:paddingBottom="@dimen/dp_10">
+
+    <TextView
+        android:id="@+id/tvTokenClassification"
+        style="@style/WrapWrap"
+        android:text="TRC20"
+        android:textColor="@color/color_5"
+        android:textSize="@dimen/sp_16" />
+
+</RelativeLayout>

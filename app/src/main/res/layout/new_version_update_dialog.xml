@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/MatchWrap"
+        android:background="@mipmap/pic_gx_bg"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/WrapWrap"
+            android:layout_marginLeft="@dimen/dp_28"
+            android:layout_marginTop="@dimen/dp_34"
+            android:text="@string/new_version_update"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_24" />
+
+        <TextView
+            android:id="@+id/tvVersionCode"
+            style="@style/WrapWrap"
+            android:layout_marginLeft="@dimen/dp_28"
+            android:layout_marginTop="@dimen/dp_2"
+            android:text="V2.02"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_upgrade_bg"
+        android:layout_marginTop="-2dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvContent"
+            style="@style/WrapWrap"
+            android:text="
+1、本次更新新增了多货币支持功能;\n
+2、本次更新新增了多持功能;\n
+3、本次更新新废话增了多货币支持功能;\n
+4、修复了某些bug。"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_16"
+            android:textColor="@color/color_9"
+            android:textSize="@dimen/sp_14"
+            />
+
+        <Button
+            android:id="@+id/btnForceUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_30"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:background="@drawable/common_btn_select"
+            android:text="@string/update_now"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+        <LinearLayout
+            style="@style/MatchWrap"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:layout_marginRight="@dimen/dp_14"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:id="@+id/llUpdate"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvUpdate"
+                android:layout_height="@dimen/dp_44"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_marginRight="@dimen/dp_6"
+                android:text="@string/update"
+                android:textColor="@color/white"
+                android:background="@drawable/common_btn_select"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tvCancel"
+                android:layout_height="@dimen/dp_44"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_marginLeft="@dimen/dp_6"
+                android:text="@string/cancel_0"
+                android:gravity="center"
+                android:background="@drawable/rv_import_wallet_footer_shape"
+                android:textColor="@color/color_12"
+                android:textSize="@dimen/sp_14"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvDownloadText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_30"
+            android:text="@string/downloading"
+            android:textColor="@color/color_5"
+            android:visibility="gone"
+            android:textSize="@dimen/sp_14" />
+
+        <ProgressBar
+            android:id="@+id/pbDownload"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_8"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_6"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:max="100"
+            android:progress="0"
+            android:visibility="gone"
+            android:progressDrawable="@drawable/download_progressbar"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>

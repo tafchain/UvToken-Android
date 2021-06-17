@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.yongqi.wallet">
+
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 关于全面屏 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <meta-data
+        android:name="android.max_aspect"
+        android:value="2.4" /> <!-- 关于刘海屏 -->
+    <!-- 适配华为（huawei）刘海屏 -->
+    <meta-data
+        android:name="android.notch_support"
+        android:value="true" />
+    <!-- 适配小米（xiaomi）刘海屏 -->
+    <meta-data
+        android:name="notch.config"
+        android:value="portrait|landscape" />
+<!--            android:label="${app_name}"-->
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:label="${APP_NAME}"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        android:theme="@style/LaunchTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:label">
+<!--         tools:ignore="GoogleAppIndexingWarning"  -->
+        <activity android:name=".ui.createWallet.ui.AddTokensActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ui.receiveAndTransfer.transfer.ui.TRXTransferActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.manageFinances.DAppScanActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.manageFinances.ui.DAppSearchActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.transaction.ui.ExchangeDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.addOptional.ui.SearchAddOptionalActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> <!-- 搜索添加自选页面 -->
+        <activity
+            android:name=".ui.transaction.ui.UnaswapSignActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> <!-- 签名页面 -->
+        <activity
+            android:name=".TestMemeryActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.manageFinances.ui.FinancialManagementWebViewActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> <!-- 理财详情网页 -->
+        <!-- <activity -->
+        <!-- android:name=".ui.receiveAndTransfer.transfer.ui.TransferActivity3" -->
+        <!-- android:launchMode="singleTask" -->
+        <!-- android:screenOrientation="portrait" /> &lt;!&ndash; 转账待优化页面 &ndash;&gt; -->
+        <activity
+            android:name=".ui.receiveAndTransfer.ui.TransferWebActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> <!-- 交易详情网页 -->
+        <activity
+            android:name=".ui.receiveAndTransfer.ui.TransferDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> <!-- 交易详情 -->
+        <activity
+            android:name=".ui.manageWallet.ui.ChangeWalletNameActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> <!-- 修改钱包名字页面 -->
+        <activity
+            android:name=".ui.transaction.ui.RecentTransactionsActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> <!-- 最近交易页面 -->
+        <activity
+            android:name=".ui.transaction.ui.ArtherWalletListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> <!-- 亚瑟主链钱包列表页面 -->
+        <activity
+            android:name=".ui.mine.ui.AboutUsActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> <!-- 关于我们 -->
+        <activity
+            android:name=".ui.mine.ui.CurrencyUnitActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> <!-- 货币单位 -->
+        <activity
+            android:name=".ui.mine.ui.LanguageSwitchActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> <!-- 语言切换 -->
+        <activity
+            android:name=".ui.receiveAndTransfer.transfer.ui.EditAddressActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> <!-- 编辑地址页面 -->
+        <activity
+            android:name=".ui.receiveAndTransfer.transfer.ui.NewAddressActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> <!-- 新建地址页面 -->
+        <activity
+            android:name=".ui.receiveAndTransfer.transfer.ui.AddressBookActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> <!-- 地址簿页面 -->
+        <activity
+            android:name=".ui.receiveAndTransfer.transfer.ui.TransferActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" /> <!-- 转账页面 -->
+        <activity
+            android:name=".ui.receiveAndTransfer.receive.ui.ReceiveActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> <!-- 收款二维码页面 -->
+        <activity
+            android:name=".ui.receiveAndTransfer.ui.ReceiveAndTransferActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> <!-- 转账和收款页面 -->
+        <activity
+            android:name=".ui.addCoin.ui.AddCoinActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> <!-- 添加代币 ERC20代币 -->
+        <activity
+            android:name=".ui.manageWallet.ui.BackupPrivateKeyDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> <!-- 备份私钥私钥详情页面 -->
+        <activity
+            android:name=".ui.manageWallet.ui.BackupPrivateKeyActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> <!-- 备份私钥 -->
+        <activity
+            android:name=".ui.manageWallet.ui.ChangePwdActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> <!-- 修改密码页面 -->
+        <activity
+            android:name=".ui.manageWallet.ui.ManageWalletActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> <!-- 钱包管理 -->
+        <activity
+            android:name=".ui.scan.ui.ScanResultActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> <!-- 二维码识别结果 -->
+        <activity
+            android:name=".ui.scan.ui.ScanQrActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> <!-- 扫描二维码 -->
+        <!-- android:roundIcon="@mipmap/ic_launcher_round" -->
+        <activity
+            android:name=".ui.main.ui.HomePageActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 主页 -->
+        <activity
+            android:name=".ui.importWallet.ui.RepeatImportActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> <!-- 重复导入提示页面 -->
+        <activity
+            android:name=".ui.importWallet.ui.PrivateKeyImportSetWalletPwdActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> <!-- 通过私钥导入,设置钱包密码页面 -->
+        <activity
+            android:name=".ui.importWallet.ui.PrivateKeyImportWalletActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> <!-- 通过私钥导入钱包页面 -->
+        <activity
+            android:name=".ui.importWallet.ui.ImportAddCurrencyActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> <!-- 导入钱包添加币种 -->
+        <activity
+            android:name=".ui.importWallet.ui.MnemonicImportSetWalletPwdActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> <!-- 导入钱包设置密码 -->
+        <activity
+            android:name=".ui.importWallet.ui.ImportWalletActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> <!-- 导入钱包页面 -->
+        <activity
+            android:name=".ui.createWallet.ui.ConfirmMnemonicActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> <!-- 确认助记词 -->
+        <activity
+            android:name=".ui.createWallet.ui.BackupMnemonicActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> <!-- 备份助记词 -->
+        <activity
+            android:name=".ui.createWallet.ui.CreateWalletActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> <!-- 创建钱包 -->
+        <activity
+            android:name=".ui.createWallet.ui.AddCurrencyActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> <!-- 添加币种 -->
+        <activity
+            android:name=".ui.wallet.ui.AgreementActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> <!-- 协议 -->
+        <activity
+            android:name=".ui.createWallet.ui.SetWalletPwdActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> <!-- (创建)设置钱包密码 -->
+        <activity
+            android:name=".ui.wallet.ui.ImportOrCreateWalletActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> <!-- 创建或导入钱包 -->
+        <!-- android:theme="@style/Theme.Wallet"> -->
+        <activity
+            android:name=".ui.launch.ui.LaunchActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/LaunchTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".base.BaseActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

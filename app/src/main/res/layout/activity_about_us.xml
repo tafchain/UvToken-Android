@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_17"
+        android:orientation="vertical"
+        tools:context=".ui.mine.ui.AboutUsActivity">
+
+
+        <RelativeLayout style="@style/MatchWrap">
+
+            <include
+                android:id="@+id/iTitle"
+                layout="@layout/common_title" />
+
+            <!--                TODO-->
+            <TextView
+                android:id="@+id/tvIsNewVersion"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_80"
+                android:background="@color/color_23"
+                android:gravity="center"
+                android:visibility="gone"
+                android:text="@string/already_the_latest_version"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_14" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="@dimen/dp_20"
+            android:orientation="vertical">
+
+            <ImageView
+                style="@style/WrapWrap"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_44"
+                android:src="@mipmap/pic_logo_about" />
+
+            <TextView
+                android:id="@+id/tvCurrentVersion"
+                style="@style/WrapWrap"
+                android:layout_gravity="center_horizontal"
+                android:text=""
+                android:textColor="@color/color_10"
+                android:textSize="@dimen/sp_12" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_40"
+                android:layout_marginRight="@dimen/dp_20"
+                android:background="@color/color_21" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlVersion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/dp_20">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/new_version_update"
+                android:textColor="@color/color_5"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tvHasNewVersion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/ivCkgd"
+                android:background="@drawable/new_version_8_bg_shape"
+                android:paddingLeft="@dimen/dp_8"
+                android:paddingRight="@dimen/dp_8"
+                android:text="New"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_12" />
+
+            <ImageView
+                android:id="@+id/ivCkgd"
+                style="@style/WrapWrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/icon_ckgd" />
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

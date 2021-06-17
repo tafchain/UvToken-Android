@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        style="@style/MatchMatch"
+        android:orientation="vertical"
+        tools:context=".ui.createWallet.ui.AddCurrencyActivity">
+
+        <include
+            android:id="@+id/iTitle"
+            layout="@layout/common_title" />
+
+        <TextView
+            style="@style/MatchWrap"
+            android:background="@color/color_15"
+            android:gravity="center"
+            android:padding="@dimen/dp_8"
+            android:text="@string/will_support_more_main_chain_currencies"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_token"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btn_create"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_30"
+            android:background="@drawable/common_btn_select"
+            android:enabled="true"
+            android:gravity="center"
+            android:text="@string/create"
+            android:textAllCaps="false"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</layout>

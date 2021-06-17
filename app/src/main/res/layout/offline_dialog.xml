@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrap"
+    android:background="@drawable/common_prompt_dialog_bg"
+    android:orientation="vertical">
+<!--    android:layout_marginLeft="@dimen/dp_48"-->
+<!--    android:layout_marginRight="@dimen/dp_48"-->
+    <TextView
+        style="@style/WrapWrap"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_30"
+        android:text="@string/device_is_offling"
+        android:textColor="@color/color_5"
+        android:textSize="@dimen/sp_16"
+        android:textStyle="bold" />
+
+    <TextView
+        style="@style/WrapWrap"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_20"
+        android:text="@string/please_check_network"
+        android:textColor="@color/color_9"
+        android:textSize="@dimen/sp_16" />
+    <TextView
+        android:id="@+id/tvGotIt"
+        android:layout_height="@dimen/dp_44"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/dp_20"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/dp_6"
+        android:text="@string/understood"
+        android:textColor="@color/white"
+        android:background="@drawable/common_btn_select"
+        android:textSize="@dimen/sp_14" />
+<!--    <LinearLayout-->
+<!--        style="@style/MatchWrap"-->
+<!--        android:layout_marginTop="@dimen/dp_20"-->
+<!--        android:layout_marginLeft="@dimen/dp_14"-->
+<!--        android:layout_marginRight="@dimen/dp_14"-->
+<!--        android:layout_marginBottom="@dimen/dp_30"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvBackup"-->
+<!--            android:layout_height="@dimen/dp_44"-->
+<!--            android:layout_weight="1"-->
+<!--          android:layout_width="0dp"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_marginRight="@dimen/dp_6"-->
+<!--            android:text="@string/backup_immediately"-->
+<!--            android:textColor="@color/color_5"-->
+<!--            android:background="@drawable/common_btn_select"-->
+<!--            android:textSize="@dimen/sp_14" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvCancel"-->
+<!--            android:layout_height="@dimen/dp_44"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_marginLeft="@dimen/dp_6"-->
+<!--            android:text="@string/cancel_0"-->
+<!--            android:gravity="center"-->
+<!--            android:background="@drawable/rv_create_wallet_footer_shape"-->
+<!--            android:textColor="@color/color_12"-->
+<!--            android:textSize="@dimen/sp_14"-->
+<!--            />-->
+<!--    </LinearLayout>-->
+</LinearLayout>

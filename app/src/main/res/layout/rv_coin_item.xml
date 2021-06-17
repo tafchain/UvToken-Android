@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlCoin"
+    style="@style/MatchWrap"
+    android:layout_marginTop="@dimen/dp_30"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/ivCoinIcon"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:src="@mipmap/icon_btc_40" />
+    <ImageView
+        android:id="@+id/ivTag"
+        android:layout_width="@dimen/dp_16"
+        android:layout_height="@dimen/dp_16"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_24"
+        />
+    <TextView
+        android:id="@+id/tvCoinType"
+        style="@style/WrapWrap"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:layout_toRightOf="@+id/ivCoinIcon"
+        android:text="USDT"
+        android:textColor="@color/color_5"
+        android:textSize="@dimen/sp_16" />
+
+
+    <ImageView
+        android:id="@+id/ivCoinTag"
+        style="@style/WrapWrap"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_6"
+        android:src="@mipmap/icon_erc20"
+        android:visibility="gone"
+        android:layout_toRightOf="@+id/tvCoinType"/>
+    <TextView
+        android:id="@+id/tvCoinMoney"
+        style="@style/WrapWrap"
+        android:layout_alignParentRight="true"
+        android:text="0"
+        android:textColor="@color/color_5"
+        android:textSize="@dimen/sp_16" />
+
+
+    <LinearLayout
+        android:id="@+id/llRmb"
+        style="@style/WrapWrap"
+        android:layout_below="@+id/tvCoinMoney"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvRmb"
+            style="@style/WrapWrap"
+            android:layout_marginRight="@dimen/dp_2"
+            android:drawableLeft="@mipmap/icon_rmb_hui"
+            android:text="≈"
+            android:textColor="@color/color_10"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/tvRmbMoney"
+            style="@style/WrapWrap"
+            android:text="0.00"
+            android:textColor="@color/color_10"
+            android:textSize="@dimen/sp_12" />
+    </LinearLayout>
+</RelativeLayout>

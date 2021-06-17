@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_40">
+
+    <TextView
+        android:id="@+id/tvSelectMnemonic"
+        style="@style/MatchMatch"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:background="@drawable/selected_mnemonic_bg"
+        android:gravity="center"
+        android:text="abc"
+        android:textColor="@color/color_7"
+        android:textSize="@dimen/sp_14" />
+
+<!--    <TextView-->
+<!--        android:layout_width="45dp"-->
+<!--        android:layout_height="20dp"-->
+<!--        android:text="Q99E7"-->
+<!--        android:textColor="#ff1d223b"-->
+<!--        android:textSize="14sp"-->
+<!--        />-->
+
+    <ImageView
+        android:id="@+id/ivIsCorrect"
+        style="@style/WrapWrap"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/dp_14"
+        android:layout_marginRight="@dimen/dp_6"
+        android:src="@mipmap/icon_jq" />
+</RelativeLayout>

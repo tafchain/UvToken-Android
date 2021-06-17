@@ -1,0 +1,319 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+    id 'kotlin-kapt'
+}
+//apply plugin: 'kotlin-kapt'
+
+static def releaseTime() {
+    return new Date().format("MMddHHmm", TimeZone.getDefault())
+}
+
+//获取文件夹最后一次git commit的sha值
+def gitSha = 'git rev-parse --short HEAD'.execute([], project.rootDir).text.trim()
+
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "com.yongqi.wallet"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 9
+        versionName "1.0.8"
+//        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        // 65535bug
+        multiDexEnabled true
+        //在BuildConfig里面创建GIT_SHA变量，代表本项目最新git的commit的值
+        buildConfigField "String", "GIT_SHA", "\"${gitSha}\""
+        flavorDimensions "default"
+        ndk {
+            abiFilters 'armeabi-v7a','arm64-v8a'//'x86', 'x86_64', 'armeabi', 'armeabi-v7a','mips','mips64','arm64-v8a'
+        }
+        packagingOptions {
+            //解决编译时com.android.builder.merge.DuplicateRelativeFileException: More than one file was found with OS independent path 'META-INF/rxjava.properties'这个错误
+            exclude 'META-INF/core.kotlin_module'
+        }
+        manifestPlaceholders = [APP_NAME:"aaa123456"]
+
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("../wallet.jks")
+            storePassword "wallet"
+            keyAlias "key0"
+            keyPassword "wallet"
+        }
+
+        debug {
+            storeFile file("../wallet.jks")
+            storePassword "wallet"
+            keyAlias "key0"
+            keyPassword "wallet"
+        }
+    }
+
+
+    buildTypes {
+        release {
+            //开启代码混淆
+            minifyEnabled false
+            //开启资源混淆，移除未使用的资源
+            shrinkResources false
+            buildConfigField "boolean","LOG_DEBUG","false"
+            //proguard-android-optimize.txt：SDK提供的默认混淆文件
+            //proguard-rules.pro：自定义混淆文件
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+            applicationVariants.all {
+                variant ->
+                    variant.outputs.all { output ->
+                        if (variant.buildType.name == "debug")
+                            return
+                        def appid = defaultConfig.applicationId
+                        println(appid)
+                        def appName = appid.split("\\.").last()
+                        def outputFile = output.outputFile
+                        if (outputFile != null && outputFile.name.endsWith(".apk")) {
+                            def fileName = "${variant.buildType.name}-${appName}-${releaseTime()}-v${defaultConfig.versionName}.apk"
+//                            outputFileName = new File("${projectDir}/apks/",fileName)
+                            outputFileName = fileName
+                        }
+                    }
+            }
+
+        }
+        debug {
+            //开启代码混淆
+            minifyEnabled false
+            //开启资源混淆，移除未使用的资源
+            shrinkResources false
+            buildConfigField "boolean","LOG_DEBUG","true"
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+
+
+            applicationVariants.all {
+                variant ->
+                    variant.outputs.all { output ->
+//                        if (variant.buildType.name == "debug")
+//                            return
+                        def appid = defaultConfig.applicationId
+                        println(appid)
+                        def appName = appid.split("\\.").last()
+                        def outputFile = output.outputFile
+                        if (outputFile != null && outputFile.name.endsWith(".apk")) {
+                            def fileName = "${variant.buildType.name}-${appName}-${releaseTime()}-v${defaultConfig.versionName}.apk"
+//                            outputFileName = new File("${projectDir}/apks/",fileName)
+                            outputFileName = fileName
+                        }
+                    }
+            }
+        }
+    }
+
+    productFlavors {
+        online {
+            applicationId 'com.yongqi.wallet'
+            buildConfigField 'String', 'API_URL', '"https://wallet.uvtoken.com/"'
+            buildConfigField 'String', 'TRANSACTION_H5', '"http://www.unaswap.com"'
+            buildConfigField 'String', 'DAPP_URL', '"https://wallet.uvtoken.com/v2/wallet/dapp/query"'
+            buildConfigField 'String', 'TRX_TRANSACTION_URL', '"https://api.trongrid.io"'
+            manifestPlaceholders = [APP_NAME:"UvToken"]
+        }
+        devtest {
+            applicationId 'com.yongqitest.wallet'
+            buildConfigField 'String', 'API_URL', '"http://192.168.0.110:80/"'
+            buildConfigField 'String', 'TRANSACTION_H5', '"http://192.168.0.248:9001"'
+            buildConfigField 'String', 'DAPP_URL', '"http://192.168.0.81:3000/v2/wallet/dapp/query"'
+            buildConfigField 'String', 'TRX_TRANSACTION_URL', '"https://api.shasta.trongrid.io"'
+            manifestPlaceholders = [APP_NAME:"UvToken_t"]
+        }
+
+        onlineuvtest {
+//            buildConfigField 'String', 'API_URL', '"https://wallet.uvtoken.com/"'
+//            buildConfigField 'String', 'TRANSACTION_H5', '"http://www.unaswap.com"'
+            applicationId 'com.vbhledger.uvtest'
+            buildConfigField 'String', 'API_URL', '"http://192.168.0.110:8008/"'
+            buildConfigField 'String', 'TRANSACTION_H5', '"http://192.168.0.248:9001"'
+            manifestPlaceholders = [APP_NAME:"Unaswap"]
+        }
+
+        devuvtest {
+            applicationId 'com.vbhledgertest.uvtest'
+            buildConfigField 'String', 'API_URL', '"http://192.168.0.110:8008/"'
+            buildConfigField 'String', 'TRANSACTION_H5', '"http://192.168.0.248:9001"'
+            manifestPlaceholders = [APP_NAME:"Unaswap_t"]
+
+        }
+
+    }
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        dataBinding true
+    }
+    ndkVersion '22.0.7026061'
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+
+}
+kapt{
+    generateStubs = true
+}
+dependencies {
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.annotation:annotation:1.1.0'
+
+
+    //开发人员不得不收集的工具代码 https://github.com/Blankj/AndroidUtilCode
+    implementation 'com.blankj:utilcodex:1.30.6'
+    // 引入multidex库  // 65535bug
+//    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    // 基础依赖包，必须要依赖
+    implementation 'com.gyf.immersionbar:immersionbar:3.0.0'
+// fragment快速实现（可选）
+    implementation 'com.gyf.immersionbar:immersionbar-components:3.0.0'
+// kotlin扩展（可选）
+    implementation 'com.gyf.immersionbar:immersionbar-ktx:3.0.0'
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4'
+    //实现底部导航栏和fragment联动
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.1.0'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.1.0'
+    implementation files('libs/walletsdk-sources.jar')
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation files('libs/walletsdk-sources.jar')
+
+    implementation 'com.just.agentwebX5:agentwebX5:2.0.0'
+    implementation files('libs/tbs_sdk_thirdapp_v4.3.0.1148_43697_sharewithdownloadwithfile_withoutGame_obfs_20190805_175505.jar')
+    implementation files('libs/walletsdk-sources.jar')
+
+
+//    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.7'
+
+    //二维码:https://github.com/yipianfengye/android-zxingLibrary
+//    implementation 'cn.yipianfengye.android:zxing-library:2.2'
+    //由于zxing-library识别图库中的二维码报错,所以选择了bga-qrcode-zxing
+    //https://github.com/bingoogolapple/BGAQRCode-Android
+    implementation 'cn.bingoogolapple:bga-qrcode-zxing:1.3.7'
+
+    //弹窗:https://github.com/afollestad/material-dialogs
+    implementation 'com.afollestad.material-dialogs:core:3.3.0'
+    implementation 'com.afollestad.material-dialogs:bottomsheets:3.3.0'
+    implementation 'com.afollestad.material-dialogs:lifecycle:3.3.0'
+
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    implementation 'com.github.hackware1993:MagicIndicator:1.7.0' // for androidx
+
+
+    /**
+     * 内部sdk
+     * 创建AAR包，并在其它项目中引用:https://blog.csdn.net/qq_42267486/article/details/109920430?utm_medium=distribute.pc_category.none-task-blog-hot-8.nonecase&depth_1-utm_source=distribute.pc_category.none-task-blog-hot-8.nonecase
+     */
+//    implementation files('libs\\walletsdk-sources.jar')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation(name:'walletsdk', ext: 'aar')
+    implementation files('libs/walletsdk-sources.jar')
+    implementation project(path: ':lib-chain-ethereum')
+
+    kapt 'com.github.bumptech.glide:compiler:4.11.0'
+    //图片选择或拍照https://github.com/LuckSiege/PictureSelector
+    implementation 'com.github.LuckSiege.PictureSelector:picture_library:v2.6.0'
+
+    implementation(["com.squareup.okhttp3:logging-interceptor:3.9.0",//$okhttp_version",
+                    "com.squareup.retrofit2:retrofit:2.3.0", //$retrofit2_version",
+                    "com.squareup.retrofit2:adapter-rxjava2:2.3.0", //$retrofit2_version",
+                    "com.squareup.retrofit2:converter-gson:2.3.0"])//$retrofit2_version"
+
+    implementation(["io.reactivex.rxjava2:rxandroid:2.0.1",//$rxandroid_version",
+                    "io.reactivex.rxjava2:rxjava:2.1.3"])//$rxjava_version"
+
+    implementation(["com.trello.rxlifecycle2:rxlifecycle-kotlin:2.2.0@aar",//$rxlifecycle_version",
+                    "com.trello.rxlifecycle2:rxlifecycle-components:2.2.0@aar"])
+
+
+    //room数据库:https://developer.android.google.cn/jetpack/androidx/releases/room?hl=zh-cn
+    //https://www.google.com/search?sxsrf=ALeKk03RxTyLQsJ7XUvcKDdP9rj3saw_UQ%3A1610973613886&ei=rYEFYMbaNdv_wAP5moDwCQ&q=room%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8&oq=room%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8&gs_lcp=CgZwc3ktYWIQAzoECAAQRzoECAAQQzoCCAA6BAgAEAo6BQgAEMsBUIgXWO84YO07aABwAngAgAGkAogBjhmSAQYwLjE1LjSYAQCgAQGqAQdnd3Mtd2l6yAEFwAEB&sclient=psy-ab&ved=0ahUKEwiG5f2vwKXuAhXbP3AKHXkNAJ4Q4dUDCA0&uact=5
+    //https://juejin.cn/post/6844903908939153415
+    def room_version = "2.2.5"
+    implementation "androidx.room:room-runtime:$room_version"
+    kapt  "androidx.room:room-compiler:$room_version" // For Kotlin use kapt instead of annotationProcessor  TODO
+    //https://github.com/greenrobot/EventBus
+    implementation 'org.greenrobot:eventbus:3.2.0'
+
+    //https://github.com/lzyzsd/JsBridge
+    implementation 'com.github.lzyzsd:jsbridge:1.0.4'
+
+    implementation 'com.scwang.smart:refresh-layout-kernel:2.0.1'      //核心必须依赖
+    implementation 'com.scwang.smart:refresh-header-classics:2.0.1'    //经典刷新头
+
+    implementation 'com.scwang.smart:refresh-footer-classics:2.0.1'    //经典加载
+
+
+    //基于DialogFragment的扩展，让dialog的使用更方便 https://github.com/SheHuan/NiceDialog
+    implementation 'com.github.SheHuan:NiceDialog:1.2.0'
+    //版本更新:https://github.com/azhon/AppUpdate
+    implementation 'com.azhon:appupdateX:3.0.2'
+    //转账速度SeekBar:https://github.com/woxingxiao/BubbleSeekBar/blob/master/README_zh.md
+    implementation 'com.xw.repo:bubbleseekbar:3.20-lite'
+    //右滑删除
+    implementation 'com.github.anzaizai:EasySwipeMenuLayout:1.1.4'
+
+    implementation 'com.tencent.bugly:crashreport:3.3.9' //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.2.0
+    debugImplementation 'com.amitshekhar.android:debug-db:1.0.6'
+    //日志打印
+    implementation 'com.apkfuns.logutils:library:1.7.5'
+    implementation('com.github.ihsanbal:LoggingInterceptor:3.0.0') {
+        exclude group: 'org.json', module: 'json'
+    }
+
+    implementation 'com.squareup.moshi:moshi:1.8.0'
+    implementation "org.java-websocket:Java-WebSocket:1.4.0"
+    implementation "com.github.komputing:khex:1.0.0-RC6"
+    implementation "org.bouncycastle:bcprov-jdk15on:1.65"
+    implementation 'com.github.li-xiaojun:XPopup:2.3.2'
+    //banner
+    implementation 'com.youth.banner:banner:2.1.0'
+    //toast
+    implementation 'com.github.GrenderG:Toasty:1.5.0'
+
+    //支持 BIP39 助记词 支持 BIP32 子私钥 支持 BIP44 多币种管理
+    //Mnemonic bip39 bip32 bip44 生成助记词 私钥
+    //https://github.com/gangan1345/mnemonic-sdk
+//    implementation 'com.lgann.develop:mnemonic-sdk:1.0.0'
+
+    // 以太坊开发库:https://github.com/web3j/web3j
+    //https://docs.web3j.io/index.html
+//    implementation 'org.web3j:core:4.6.0-android'
+//    implementation 'org.web3j:core:4.1.0-android'
+//    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+//    implementation 'org.web3j:core:3.3.1-android'
+
+    // bitcoinj:https://github.com/bitcoinj/bitcoinj
+//    implementation 'com.github.bitcoinj:bitcoinj:release-0.15.9'
+//    implementation 'com.github.bitcoinj:bitcoinj:release-0.15-SNAPSHOT'
+//    implementation 'org.bitcoinj:bitcoinj-core:0.14.7'
+
+
+}
